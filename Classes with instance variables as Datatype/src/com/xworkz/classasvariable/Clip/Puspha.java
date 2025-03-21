@@ -6,9 +6,9 @@ public class Puspha {
         for(Clip ref:clip){
             if(ref!=null){
                 ref.hold();
-                ref.color();
+                ref.displayColor();
             }
-            System.err.println("Pointing to null");
+            else System.err.println("Pointing to null");
         }
     }
 

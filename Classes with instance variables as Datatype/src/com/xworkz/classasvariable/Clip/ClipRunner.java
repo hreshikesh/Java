@@ -2,13 +2,21 @@ package com.xworkz.classasvariable.Clip;
 
 public class ClipRunner {
     public static void main(String[] args) {
-        Clip[] clip=new Clip[5];
-        for(int i=0;i<5;i++){
-            clip[i]=new Clip();
-        }
+        Clip clip1=new Clip();
+        clip1.color="red";
+        Clip clip2=new Clip();
+        clip2.color="yellow";
+        Clip clip3=new Clip();
+        clip3.color="silver";
+        Clip clip4=new Clip();
+        clip4.color="gold";
+
+
+        Clip[] clips={clip1,clip2,clip3,clip4};
+
 
         Puspha puspha=new Puspha();
-        puspha.clip=clip;
+        puspha.clip=clips;
         puspha.useClip();
 
 
