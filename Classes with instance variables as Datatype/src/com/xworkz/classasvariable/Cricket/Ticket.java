@@ -4,7 +4,6 @@ public class Ticket {
     TicketType[] type = TicketType.values();
 
     public void type() {
-        TicketType[] type = TicketType.values();
         for (TicketType ref : type) {
             System.out.println("TYPE of ticket is" + ref);
         }

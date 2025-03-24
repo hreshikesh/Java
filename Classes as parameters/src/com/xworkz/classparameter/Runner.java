@@ -1,5 +1,4 @@
 package com.xworkz.classparameter;
-
 import com.xworkz.classparameter.Barber.Barber;
 import com.xworkz.classparameter.Barber.Saloon;
 import com.xworkz.classparameter.Camera.Camera;
