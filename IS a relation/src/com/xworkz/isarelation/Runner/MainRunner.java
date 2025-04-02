@@ -1,8 +1,6 @@
 package com.xworkz.isarelation.Runner;
 
-import com.sun.org.apache.xpath.internal.operations.Or;
 import com.xworkz.isarelation.Internal.*;
-import sun.security.provider.Sun;
 
 public class MainRunner {
     public static void main(String[] args) {
@@ -929,11 +927,11 @@ public class MainRunner {
         fruit11.fresh();
         fruit11.juice();
         Watermelon watermelon=new Watermelon();
-        grapes.cut();
-        grapes.smell();
-        grapes.eat();
-        grapes.fresh();
-        grapes.juice();
+        watermelon.cut();
+        watermelon.smell();
+        watermelon.eat();
+        watermelon.fresh();
+        watermelon.juice();
         System.out.println("49============================");
         Fruit fruit12=new Fruit();
         fruit12.cut();
