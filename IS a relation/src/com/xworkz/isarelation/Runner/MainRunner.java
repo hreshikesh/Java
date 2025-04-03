@@ -1,6 +1,5 @@
 package com.xworkz.isarelation.Runner;
 
-import com.sun.scenario.effect.impl.sw.java.JSWBlend_SRC_OUTPeer;
 import com.xworkz.isarelation.Internal.*;
 
 public class MainRunner {
@@ -1918,8 +1917,6 @@ public class MainRunner {
         karate.apply();
         karate.requiresEffort();
         karate.hasLevels();
-
-
 
 
 
