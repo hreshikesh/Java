@@ -22,6 +22,6 @@ public class Organ {
     }
 
     public void repair() {
-        System.out.println("Organ has the ability to repair itself to some extent");
+        System.out.println("Organ has the ability to repair");
     }
 }

@@ -22,6 +22,6 @@ public class Oil {
     }
 
     public void use() {
-        System.out.println("Oil has multiple uses like cooking, skincare, and lubrication");
+        System.out.println("Oil has multiple uses");
     }
 }

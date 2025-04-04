@@ -1,9 +1,10 @@
 package com.xworkz.isarelation.Internal;
 
 public class Building {
-    public Building(){
+    public Building() {
         System.out.println("no args const of Building");
     }
+
     public void openDoors() {
         System.out.println("Building doors opened");
     }

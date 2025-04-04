@@ -1,6 +1,9 @@
 package com.xworkz.isarelation.Internal;
 
 public class Shape {
+    public Shape(){
+        System.out.println("no args const of Shape");
+    }
     public void draw() {
         System.out.println("Drawing a shape");
     }

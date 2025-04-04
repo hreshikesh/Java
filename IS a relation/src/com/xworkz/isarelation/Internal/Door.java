@@ -22,6 +22,6 @@ public class Door {
     }
 
     public void material() {
-        System.out.println("Door can be made of different materials like wood, metal, or glass");
+        System.out.println("Door can be made of different materials");
     }
 }

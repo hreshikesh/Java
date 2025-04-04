@@ -145,7 +145,7 @@ public class MainRunner {
         device2.on();
         device2.display();
         device2.watch();
-        Device device3 = new TV();
+        Device device3 = new Laptop();
         device3.brightness();
         device3.off();
         device3.on();
@@ -164,7 +164,7 @@ public class MainRunner {
         sport2.kick();
         sport2.penalty();
         sport2.play();
-        Sport sport3 = new Football();
+        Sport sport3 = new Hockey();
         sport3.foul();
         sport3.goal();
         sport3.kick();
@@ -182,7 +182,7 @@ public class MainRunner {
         mobile2.play();
         mobile2.volumeUp();
         mobile2.volumeDown();
-        Mobile mobile3 = new Iphone();
+        Mobile mobile3 = new Samsung();
         mobile3.draw();
         mobile3.note();
         mobile3.play();
@@ -201,7 +201,7 @@ public class MainRunner {
         mobile4.play();
         mobile4.volumeUp();
         mobile4.volumeDown();
-        Mobile mobile5 = new Iphone();
+        Mobile mobile5 = new Oppo();
         mobile5.draw();
         mobile5.note();
         mobile5.play();
@@ -220,7 +220,7 @@ public class MainRunner {
         sport4.kick();
         sport4.penalty();
         sport4.play();
-        Sport sport5 = new Football();
+        Sport sport5 = new Cricket();
         sport5.foul();
         sport5.goal();
         sport5.kick();
@@ -239,7 +239,7 @@ public class MainRunner {
         device4.on();
         device4.display();
         device4.watch();
-        Device device5 = new TV();
+        Device device5 = new Speaker();
         device5.brightness();
         device5.off();
         device5.on();
@@ -258,7 +258,7 @@ public class MainRunner {
         footwear2.tie();
         footwear2.remove();
         footwear2.walk();
-        Footwear footwear3 = new Shoe();
+        Footwear footwear3 = new Chappal();
         footwear3.wear();
         footwear3.run();
         footwear3.tie();
@@ -277,7 +277,7 @@ public class MainRunner {
         mobile6.play();
         mobile6.volumeUp();
         mobile6.volumeDown();
-        Mobile mobile7 = new Iphone();
+        Mobile mobile7 = new Poco();
         mobile7.draw();
         mobile7.note();
         mobile7.play();
@@ -521,7 +521,7 @@ public class MainRunner {
         bird10.nest();
         bird10.eat();
         bird10.sleep();
-        Bird bird11 = new Parrot();
+        Bird bird11 = new Eagle();
         bird11.fly();
         bird11.chirp();
         bird11.nest();
@@ -958,7 +958,7 @@ public class MainRunner {
         fruit14.eat();
         fruit14.fresh();
         fruit14.juice();
-        Fruit fruit15 = new Kiwi();
+        Fruit fruit15 = new Banana();
         fruit15.cut();
         fruit15.smell();
         fruit15.eat();
@@ -1917,11 +1917,6 @@ public class MainRunner {
         karate.apply();
         karate.requiresEffort();
         karate.hasLevels();
-
-
-
-
-
 
 
     }

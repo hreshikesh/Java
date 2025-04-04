@@ -22,6 +22,6 @@ public class Minister {
     }
 
     public void manageDepartment() {
-        System.out.println("Minister is managing their respective department");
+        System.out.println("Minister is managing their respective dept");
     }
 }

@@ -1,7 +1,7 @@
 package com.xworkz.isarelation.Internal;
 
 public class Instrument {
-    public Instrument(){
+    public Instrument() {
         System.out.println("no args const of Instrument");
     }
 
@@ -10,7 +10,7 @@ public class Instrument {
         System.out.println("Instrument playing");
     }
 
-   public  void tune() {
+    public void tune() {
         System.out.println("Instrument tuning");
     }
 

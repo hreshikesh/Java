@@ -1,22 +1,27 @@
 package com.xworkz.isarelation.Internal;
 
 public class Bus {
-    public Bus(){
+    public Bus() {
         System.out.println("no arg const of bus");
     }
-    public void ticket(){
+
+    public void ticket() {
         System.out.println("Running ticket");
     }
-    public void pass(){
+
+    public void pass() {
         System.out.println("Running pass");
     }
-    public void seat(){
+
+    public void seat() {
         System.out.println("Running seat");
     }
-    public void stand(){
+
+    public void stand() {
         System.out.println("Running stand");
     }
-    public void reserved(){
+
+    public void reserved() {
         System.out.println("Running reserved");
     }
 }

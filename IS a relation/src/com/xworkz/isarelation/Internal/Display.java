@@ -22,6 +22,6 @@ public class Display {
     }
 
     public void displayType() {
-        System.out.println("Display types include LCD, LED, OLED, etc.");
+        System.out.println("Display types .");
     }
 }

@@ -1,9 +1,10 @@
 package com.xworkz.isarelation.Internal;
 
 public class Bird {
-    public Bird(){
+    public Bird() {
         System.out.println("no args const of Bird");
     }
+
     public void fly() {
         System.out.println("Bird is flying");
     }
@@ -12,7 +13,7 @@ public class Bird {
         System.out.println("Bird chirping");
     }
 
-    public  void nest() {
+    public void nest() {
         System.out.println("Bird making a nest");
     }
 
