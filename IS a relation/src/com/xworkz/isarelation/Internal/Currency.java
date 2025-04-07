@@ -24,4 +24,8 @@ public class Currency extends Money{
     public void buyGoods() {
         System.out.println("Money is used to buy goods and services in subclass");
     }
+
+    public void fakeMoney(){
+        System.out.println("Fake money in money");
+    }
 }

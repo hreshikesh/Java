@@ -24,4 +24,8 @@ public class Professor extends Person{
     public void breathe() {
         System.out.println("Person breathes to live in subclass");
     }
+
+    public void letcure(){
+        System.out.println("Lecture in professor");
+    }
 }

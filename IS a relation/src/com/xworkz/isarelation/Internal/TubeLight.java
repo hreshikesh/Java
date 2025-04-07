@@ -29,4 +29,8 @@ public class TubeLight extends Light {
     public void powerSource() {
         System.out.println("Light runs on electricity or batteries");
     }
+
+    public void intensity(){
+        System.out.println("Intensity of Tubelight");
+    }
 }

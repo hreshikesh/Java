@@ -30,4 +30,8 @@ public class Karate extends Skill {
         System.out.println("Skill has different levels of proficiency in subclass");
     }
 
+    public void belt(){
+        System.out.println("Running belt in karate");
+    }
+
 }

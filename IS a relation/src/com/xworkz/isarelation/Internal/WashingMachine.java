@@ -24,4 +24,8 @@ public class WashingMachine extends Appliance {
     public void warrantyPeriod() {
         System.out.println("Checking warranty period of appliance in subclass");
     }
+
+    public void machineCost(){
+        System.out.println("Running Machine Cost in Washinmachine");
+    }
 }

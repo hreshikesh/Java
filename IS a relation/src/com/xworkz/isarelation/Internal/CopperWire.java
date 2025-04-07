@@ -29,4 +29,8 @@ public class CopperWire extends Wire {
     public void usage() {
         System.out.println("Wire is used in electrical circuits and networking in subclass");
     }
+
+    public void shock(){
+        System.out.println("Shock in copperWire");
+    }
 }

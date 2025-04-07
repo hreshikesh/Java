@@ -24,4 +24,8 @@ public class Bathroom extends Room {
     public void occupy() {
         System.out.println("Room is occupied in subclass");
     }
+
+    public void bath(){
+        System.out.println("Bath in bathroom");
+    }
 }

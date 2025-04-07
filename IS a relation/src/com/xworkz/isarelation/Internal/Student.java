@@ -25,4 +25,8 @@ public class Student extends School {
         System.out.println("Teachers are in a meeting in subclass");
     }
 
+    public void homework(){
+        System.out.println("Running homework in student");
+    }
+
 }

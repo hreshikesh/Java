@@ -24,4 +24,7 @@ public class Heart extends Organ{
     public void repair() {
         System.out.println("Organ has the ability to repair in subclass");
     }
+    public void pump(){
+        System.out.println("Pumping in Heart");
+    }
 }

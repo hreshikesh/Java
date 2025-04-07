@@ -24,4 +24,8 @@ public class Tablet extends Medicine {
     public void expiryDate() {
         System.out.println("Running expiryDate in subclass");
     }
+
+    public void overDose(){
+        System.out.println("Running OverDose in Tablet");
+    }
 }

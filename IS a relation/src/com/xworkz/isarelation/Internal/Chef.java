@@ -25,4 +25,8 @@ public class Chef extends Restaurant {
         System.out.println("Restaurant is managing staff in subclass");
     }
 
+    public void cookChicken(){
+        System.out.println("Running cookChicken in Restaurant");
+    }
+
 }

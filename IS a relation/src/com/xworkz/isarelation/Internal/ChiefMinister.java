@@ -25,4 +25,8 @@ public class ChiefMinister extends Minister{
     public void manageDepartment() {
         System.out.println("Minister is managing their respective dept in subclass");
     }
+
+    public void duty(){
+        System.out.println("Minister duty in CheifMinister");
+    }
 }

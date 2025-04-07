@@ -30,4 +30,8 @@ public class Song extends Music {
         System.out.println("Downloading music in subclass");
     }
 
+    public void singer(){
+        System.out.println("Singer singing the song");
+    }
+
 }

@@ -24,4 +24,9 @@ public class Sprite extends ColdDrink {
     public void sugarContent() {
         System.out.println("ColdDrink may contain sugar or be sugar-free in subclass");
     }
+
+
+    public void openCap(){
+        System.out.println("openeing cap of Sprite");
+    }
 }

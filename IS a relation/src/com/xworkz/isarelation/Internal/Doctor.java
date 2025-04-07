@@ -24,4 +24,8 @@ public class Doctor extends Hospital {
     public void maintainRecords() {
         System.out.println("Maintaining patient records in subclass");
     }
+
+    public void suspend(){
+        System.out.println("Running suspend in doctor");
+    }
 }

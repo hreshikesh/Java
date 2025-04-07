@@ -24,4 +24,9 @@ public class USB extends Port {
     public void compatibility() {
         System.out.println("Port needs compatibility with devices in subclass");
     }
+
+
+    public void charge(){
+        System.out.println("Charging in USB");
+    }
 }

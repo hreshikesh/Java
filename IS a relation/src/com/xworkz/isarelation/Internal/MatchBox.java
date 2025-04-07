@@ -25,4 +25,8 @@ public class MatchBox extends Box{
         System.out.println("Box comes in different sizes in subclass");
     }
 
+    public void fire(){
+        System.out.println("Fire in Match box");
+    }
+
 }

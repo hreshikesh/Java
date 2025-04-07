@@ -24,4 +24,8 @@ public class Jet extends Airplane {
     public void passengers() {
         System.out.println("Airplane carries passengers in subclass");
     }
+
+    public void speed(){
+        System.out.println("Speed of a the jet in jet");
+    }
 }

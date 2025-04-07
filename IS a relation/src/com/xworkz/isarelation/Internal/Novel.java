@@ -24,4 +24,8 @@ public class Novel extends Book{
     public void store() {
         System.out.println("Storing the book on a shelf in subclass");
     }
+
+    public void author(){
+        System.out.println("author writing novel in Novel");
+    }
 }

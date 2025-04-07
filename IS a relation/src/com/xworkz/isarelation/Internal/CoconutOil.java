@@ -25,4 +25,8 @@ public class CoconutOil extends Oil {
         System.out.println("Oil has multiple uses in subclass");
     }
 
+    public void massage(){
+        System.out.println("Massiging in coconutOil");
+    }
+
 }

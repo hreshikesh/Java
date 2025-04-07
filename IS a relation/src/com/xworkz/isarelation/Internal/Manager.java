@@ -24,4 +24,7 @@ public class Manager extends Employee{
     public void getSalary() {
         System.out.println("Running getSalary in subclass");
     }
+    public void fire(){
+        System.out.println("Running fire in Manager");
+    }
 }

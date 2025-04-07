@@ -24,4 +24,8 @@ public class Hammer extends Tool{
     public void repair() {
         System.out.println("Repairing the tool in subclass");
     }
+
+    public void nailIt(){
+        System.out.println("Nailing it up in Hammer");
+    }
 }

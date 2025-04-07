@@ -24,4 +24,8 @@ public class MathTeacher extends Teacher {
     public void guideStudents() {
         System.out.println("Running guideStudents in subclass");
     }
+
+    public void punish(){
+        System.out.println("Running punish in MathTeacher");
+    }
 }

@@ -24,5 +24,8 @@ public class Airpods extends  AudioDevice{
     public void play() {
         System.out.println("Running play in subclass");
     }
+    public  void cost(){
+        System.out.println("Running cost in airpods");
+    }
 
 }

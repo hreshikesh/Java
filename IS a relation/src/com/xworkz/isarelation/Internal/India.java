@@ -24,4 +24,7 @@ public class India extends Country{
     public void language() {
         System.out.println("Each country has its official languages in subclass");
     }
+    public void culture(){
+        System.out.println("Culture of India");
+    }
 }

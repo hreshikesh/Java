@@ -30,4 +30,8 @@ public class Fire extends Element {
         System.out.println("Elements are listed in the periodic table in subclass");
     }
 
+    public void burn(){
+        System.out.println("Running burn in Fire");
+    }
+
 }

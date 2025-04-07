@@ -25,4 +25,8 @@ public class English extends Language {
         System.out.println("Running read in subclass");
     }
 
+    public void communicate(){
+        System.out.println("Running communicate in English");
+    }
+
 }

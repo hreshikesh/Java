@@ -24,4 +24,8 @@ public class WoodenDoor extends Door{
     public void material() {
         System.out.println("Door can be made of different materials in subclass");
     }
+
+    public void breakDoor(){
+        System.out.println("Breakin door in WoodenDoor");
+    }
 }

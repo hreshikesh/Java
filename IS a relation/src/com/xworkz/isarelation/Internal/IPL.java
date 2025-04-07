@@ -24,4 +24,8 @@ public class IPL extends Tournament {
     public void entertainFans() {
         System.out.println("Tournament provides entertainment for sports fans in subclass");
     }
+
+    public void trophy(){
+        System.out.println("Trophy in IPL");
+    }
 }

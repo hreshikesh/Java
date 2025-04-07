@@ -29,4 +29,8 @@ public class Monitor extends Display {
     public void displayType() {
         System.out.println("Display types in subclass");
     }
+    public void refresh(){
+        System.out.println("Refreshing monitor in Monitor");
+
+    }
 }

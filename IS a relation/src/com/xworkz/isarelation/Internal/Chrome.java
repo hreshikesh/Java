@@ -24,4 +24,7 @@ public class Chrome extends Browser {
     public void extensions() {
         System.out.println("Browser supports extensions and add-ons in subclass");
     }
+    public void cache(){
+        System.out.println("Running cache");
+    }
 }

@@ -24,4 +24,8 @@ public class Charcoal extends Coal{
     public void usage() {
         System.out.println("Coal is used in industries in subclass");
     }
+
+    public void toothPaste(){
+        System.out.println("Toothpaste in charcoal");
+    }
 }

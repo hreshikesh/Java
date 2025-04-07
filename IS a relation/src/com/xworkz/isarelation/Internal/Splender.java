@@ -29,4 +29,8 @@ public class Splender extends Bike {
     public void drag() {
         System.out.println("Running drag in subclass");
     }
+
+    public void carry(){
+        System.out.println("Running carry in Splender");
+    }
 }

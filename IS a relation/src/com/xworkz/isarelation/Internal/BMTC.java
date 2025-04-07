@@ -24,5 +24,8 @@ public class BMTC extends Bus{
     public void reserved() {
         System.out.println("Running reserved in subclass");
     }
+    public void type(){
+        System.out.println("Running type in bmtc");
+    }
 
 }

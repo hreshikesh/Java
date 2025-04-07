@@ -24,4 +24,8 @@ public class EyeDrop extends Drop {
     public void dispense() {
         System.out.println("Drop is dispensed from a container in subclass");
     }
+
+    public void cure(){
+        System.out.println("Curing in eyedrop");
+    }
 }

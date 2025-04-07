@@ -24,4 +24,9 @@ public class Tea extends Beverage{
     public void drink() {
         System.out.println("Drinking the beverage in subclass");
     }
+
+    public void makeTea(){
+        System.out.println("Making a tea in Tea");
+
+    }
 }

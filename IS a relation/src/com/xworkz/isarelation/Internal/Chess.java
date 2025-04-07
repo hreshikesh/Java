@@ -24,4 +24,8 @@ public class Chess extends Game{
     public void saveProgress() {
         System.out.println("Saving game progressin subclass");
     }
+
+    public void win(){
+        System.out.println("Winning chess game in Chess");
+    }
 }

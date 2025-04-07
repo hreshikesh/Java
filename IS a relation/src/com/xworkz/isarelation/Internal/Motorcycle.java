@@ -25,4 +25,8 @@ public class Motorcycle extends Cycle{
         System.out.println("Cycle has a side stand in subclass");
     }
 
+    public void service(){
+        System.out.println("Servicing motorcycle");
+    }
+
 }

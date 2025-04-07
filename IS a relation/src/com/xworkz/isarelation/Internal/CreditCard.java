@@ -24,4 +24,8 @@ public class CreditCard extends Card {
     public void expire() {
         System.out.println("Checking card expiration validate in subclass");
     }
+
+    public void creditScore(){
+        System.out.println("Credit Score in CreditCard");
+    }
 }

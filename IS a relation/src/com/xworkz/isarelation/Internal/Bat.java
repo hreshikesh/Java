@@ -24,4 +24,9 @@ public class Bat extends SportsEquipment{
     public void cost() {
         System.out.println("Sports equipment has different price ranges in subclass");
     }
+
+
+    public void broke(){
+        System.out.println("Broke bat in Bat");
+    }
 }

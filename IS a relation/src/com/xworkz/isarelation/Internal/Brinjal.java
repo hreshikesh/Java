@@ -24,4 +24,9 @@ public class Brinjal extends Vegetable{
     public void steam() {
         System.out.println("Running steam in subclass");
     }
+
+
+    public void cut(){
+        System.out.println("Running cut in Brinjal");
+    }
 }

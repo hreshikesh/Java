@@ -25,4 +25,8 @@ public class Watch extends Clock{
         System.out.println("Clock can be powered by battery or electricity in subclass");
     }
 
+    public void timeStop(){
+        System.out.println("Running timestop");
+    }
+
 }

@@ -24,4 +24,8 @@ public class SkyBag extends Bag {
     public void size() {
         System.out.println("Running size in subclass");
     }
+
+    public void durable(){
+        System.out.println("Running durable in skybag");
+    }
 }

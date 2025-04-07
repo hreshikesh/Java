@@ -24,4 +24,8 @@ public class RCB extends Team{
     public void celebrate() {
         System.out.println("Team celebrates victories in subclass");
     }
+
+    public void win(){
+        System.out.println("Win in RCB");
+    }
 }

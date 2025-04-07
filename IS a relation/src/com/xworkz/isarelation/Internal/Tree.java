@@ -24,4 +24,8 @@ public class Tree extends Plant{
     public void consumeWater() {
         System.out.println("The plant is consuming water in subclass");
     }
+
+    public void cutDown(){
+        System.out.println("Cutting Down a tree in Tree");
+    }
 }

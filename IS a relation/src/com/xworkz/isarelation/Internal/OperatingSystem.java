@@ -24,4 +24,8 @@ public class OperatingSystem extends Software {
     public void configure() {
         System.out.println("Configuring software settings in subclass");
     }
+
+    public void osVersion(){
+        System.out.println("Running Os Version In Operating System");
+    }
 }

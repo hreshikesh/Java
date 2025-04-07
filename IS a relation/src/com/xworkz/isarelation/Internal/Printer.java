@@ -25,4 +25,8 @@ public class Printer extends OutputDevice {
         System.out.println("running produceoutput in subclass");
     }
 
+    public void pinFiles(){
+        System.out.println("Running PinFiles in Printer");
+    }
+
 }

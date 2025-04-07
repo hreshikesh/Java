@@ -29,4 +29,8 @@ public class Java extends ProgrammingLanguage {
     public void debug() {
         System.out.println("Running debug in subclass");
     }
+
+    public void implement(){
+        System.out.println("Running implement in java");
+    }
 }
