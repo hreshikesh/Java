@@ -2,7 +2,6 @@ package com.xworkz.tostring.Runner;
 
 import com.xworkz.tostring.Internal.*;
 
-import java.util.function.DoubleToIntFunction;
 
 public class MainRunner {
     public static void main(String[] args) {

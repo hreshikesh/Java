@@ -15,5 +15,5 @@ public class Console {
     public String toString() {
         return "Console name " + this.name + " manufacturer " + this.manufacturer + " price " + this.price;
     }
-}
+
 }
