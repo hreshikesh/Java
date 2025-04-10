@@ -15,4 +15,8 @@ public class Pencil {
     public String toString() {
         return "Pencil brand " + this.brand + " type " + this.type + " price " + this.price;
     }
+    @Override
+    public int hashCode() {
+        return 78;
+    }
 }

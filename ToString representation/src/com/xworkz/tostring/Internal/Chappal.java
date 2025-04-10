@@ -15,4 +15,8 @@ public class Chappal {
     public String toString() {
         return "Chappla brand " + this.brand + " size " + this.size + " price " + this.price;
     }
+    @Override
+    public int hashCode() {
+        return 507;
+    }
 }

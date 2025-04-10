@@ -15,5 +15,9 @@ public class Candle {
     public String toString() {
         return "Candle scent: " + scent + ", weight: " + weight + "g, price: " + price;
     }
+    @Override
+    public int hashCode() {
+        return 5700;
+    }
 
 }

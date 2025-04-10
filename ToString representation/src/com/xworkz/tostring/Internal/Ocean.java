@@ -15,4 +15,8 @@ public class Ocean {
     public String toString() {
         return "Ocean name: " + this.name + ", depth: " + this.depth + " meters, area: " + this.area + " sq km";
     }
+    @Override
+    public int hashCode() {
+        return -9875;
+    }
 }

@@ -15,6 +15,10 @@ public class Milk {
     public String toString() {
         return "Milk brand: " +  this.brand + ", volume: " +  this.volume + "ml, price: " +  this.price;
     }
+    @Override
+    public int hashCode() {
+        return -785;
+    }
 
 
 }

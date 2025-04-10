@@ -15,6 +15,10 @@ public class WoodenBox {
         public String toString() {
             return "WoodenBox material " + this.material + " shape " + this.shape + " weight " + this.weight;
         }
+    @Override
+    public int hashCode() {
+        return -9285;
+    }
 
 
 }

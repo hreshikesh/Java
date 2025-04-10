@@ -15,4 +15,8 @@ public class Zoo {
     public String toString() {
         return "Zoo brand "+this.zooName+" Zoo cost "+this.owner+" Zoo Color "+this.ticketPrice;
     }
+    @Override
+    public int hashCode() {
+        return -2140000000;
+    }
 }

@@ -15,6 +15,10 @@ public class Umbrella {
     public String toString() {
         return "Umbrella color: " + color + ", length: " + length + "cm, price: " + price;
     }
+    @Override
+    public int hashCode() {
+        return 1587995;
+    }
 
 
 }

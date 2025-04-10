@@ -15,6 +15,10 @@ public class DiningTable {
     public String toString() {
         return "DiningTable shape: " + shape + ", seats: " + seats + ", price: " + price;
     }
+    @Override
+    public int hashCode() {
+        return 58700;
+    }
 
 
 }

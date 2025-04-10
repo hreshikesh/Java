@@ -15,4 +15,9 @@ public class Ipl {
     public String toString() {
         return "IPL Team: " + teamName + ", Captain: " + captain + ", Wins: " + wins;
     }
+
+    @Override
+    public int hashCode() {
+        return -8;
+    }
 }

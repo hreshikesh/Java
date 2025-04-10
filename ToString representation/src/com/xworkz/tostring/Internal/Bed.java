@@ -15,4 +15,8 @@ public class Bed {
     public String toString() {
         return "Bed type " + this.type + " material " + this.material + " price " + this.price;
     }
+    @Override
+    public int hashCode() {
+        return 1000;
+    }
 }

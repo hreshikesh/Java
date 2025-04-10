@@ -15,6 +15,10 @@ public class Rice {
     public String toString() {
         return "Rice type: " + type + ", quantity: " + quantityInKg + "kg, price: " + price;
     }
+    @Override
+    public int hashCode() {
+        return 4858;
+    }
 
 }
 

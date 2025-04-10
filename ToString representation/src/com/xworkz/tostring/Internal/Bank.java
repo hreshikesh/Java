@@ -15,4 +15,8 @@ public class Bank {
     public String toString() {
         return "Bank name " + this.name + " branch " + this.branch + " Balance " + this.balance;
     }
+    @Override
+    public int hashCode() {
+        return 120;
+    }
 }

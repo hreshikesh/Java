@@ -15,4 +15,8 @@ public class Mat {
     public String toString() {
         return "Mat material: " + material + ", shape: " + shape + ", thickness: " + thickness + "mm";
     }
+    @Override
+    public int hashCode() {
+        return -7;
+    }
 }

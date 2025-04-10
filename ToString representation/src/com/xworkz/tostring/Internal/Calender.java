@@ -15,4 +15,8 @@ public class Calender {
     public String toString() {
         return "Calendar year: " +  this.year + ", theme: " +  this.theme + ", price: " +  this.price;
     }
+    @Override
+    public int hashCode() {
+        return 5100;
+    }
 }

@@ -15,5 +15,8 @@ public class USB {
     public String toString() {
         return "Usb brand: " + brand + " storageCapacity: " + storageCapacity + " type: " + type;
     }
-
+    @Override
+    public int hashCode() {
+        return -10005;
+    }
 }

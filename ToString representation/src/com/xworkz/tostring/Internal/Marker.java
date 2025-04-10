@@ -15,6 +15,10 @@ public class Marker {
     public String toString() {
         return "Marker color: " + color + ", brand: " + brand + ", price: " + price;
     }
+    @Override
+    public int hashCode() {
+        return 589;
+    }
 
 
 }

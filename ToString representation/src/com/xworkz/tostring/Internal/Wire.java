@@ -15,4 +15,8 @@ public class Wire {
     public String toString() {
         return "Wire material: " + material + ", length: " + length + " meters, color: " + color;
     }
+    @Override
+    public int hashCode() {
+        return -100;
+    }
 }

@@ -15,4 +15,8 @@ public class ToothPaste {
     public String toString() {
         return "Toothpaste brand " + this.brand + " flavor " + this.flavor + " price " + this.price;
     }
+    @Override
+    public int hashCode() {
+        return -2003;
+    }
 }

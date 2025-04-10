@@ -15,6 +15,10 @@ public class Ruler {
     public String toString() {
         return "Ruler length: " + length + "cm, material: " + material + ", price: " + price;
     }
+    @Override
+    public int hashCode() {
+        return -985;
+    }
 
 
 }

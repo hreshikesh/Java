@@ -15,4 +15,8 @@ public class SunGlasses {
     public String toString() {
         return "Sunglasses brand " + this.brand + " frame color " + this.frameColor + " price " + this.price;
     }
+    @Override
+    public int hashCode() {
+        return 2004;
+    }
 }

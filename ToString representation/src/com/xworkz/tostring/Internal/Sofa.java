@@ -15,5 +15,9 @@ public class Sofa {
     public String toString() {
         return "Sofa material: " + material + ", seats: " + seats + ", price: " + price;
     }
+    @Override
+    public int hashCode() {
+        return -9;
+    }
 
     }

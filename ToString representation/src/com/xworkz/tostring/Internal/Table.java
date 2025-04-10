@@ -13,4 +13,8 @@ public class Table {
     public String toString() {
         return "Table shape " + this.shape + " material " + this.material + " price " + this.price;
     }
+    @Override
+    public int hashCode() {
+        return -2004;
+    }
 }

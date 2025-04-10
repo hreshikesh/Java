@@ -15,4 +15,8 @@ public class Battery {
     public String toString() {
         return "Battery type " + this.type + " company " + this.company + " capacity" + this.capacity+"V";
     }
+    @Override
+    public int hashCode() {
+        return 105;
+    }
 }

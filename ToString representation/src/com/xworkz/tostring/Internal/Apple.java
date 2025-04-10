@@ -15,4 +15,8 @@ public class Apple {
     public String toString() {
         return "Apple variety: " +  this.variety + ", weight: " +  this.weight + "g, price: " +  this.price;
     }
+    @Override
+    public int hashCode() {
+        return 110;
+    }
 }

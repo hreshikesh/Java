@@ -15,4 +15,9 @@ public class ATM {
     public String toString() {
         return "ATM bank " + this.bankName + " location " + this.location + " ATM ID " + this.atmId;
     }
+
+    @Override
+    public int hashCode() {
+        return 101;
+    }
 }

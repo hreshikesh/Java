@@ -15,6 +15,9 @@ public class CreditCard {
     public String toString() {
         return "CreditCard bank: " + bankName + ", card number: " + cardNumber + ", credit limit: " + creditLimit;
     }
-
+    @Override
+    public int hashCode() {
+        return 8500;
+    }
 
 }

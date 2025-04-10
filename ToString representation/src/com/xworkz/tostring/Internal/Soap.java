@@ -15,4 +15,8 @@ public class Soap {
     public String toString() {
         return "Soap brand " + this.brand + " type " + this.type + " price " + this.price;
     }
+    @Override
+    public int hashCode() {
+        return 85;
+    }
 }

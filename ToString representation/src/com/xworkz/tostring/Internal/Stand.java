@@ -15,4 +15,8 @@ public class Stand {
     public String toString() {
         return "Stand type " + this.type + " color " + this.color + " price ₹" + this.price;
     }
+    @Override
+    public int hashCode() {
+        return -777777;
+    }
 }

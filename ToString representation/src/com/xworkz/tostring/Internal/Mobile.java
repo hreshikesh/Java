@@ -15,4 +15,9 @@ public class Mobile {
     public String toString() {
         return "Mobile brand " + this.brand + " model " + this.model + " battery " + this.price ;
     }
+    @Override
+    public int hashCode() {
+        return 1021;
+    }
+
 }

@@ -15,4 +15,8 @@ public class Mug {
     public String toString() {
         return "Mug material: " + material + ", color: " + color + ", price: " + price;
     }
+    @Override
+    public int hashCode() {
+        return -1111;
+    }
 }

@@ -15,4 +15,9 @@ public class Adapter {
     public String toString() {
         return "Adapter brand: " + this.brand + ", wattage: " + this.wattage + "W, price: " + this.price;
     }
+
+    @Override
+    public int hashCode() {
+        return 100;
+    }
 }

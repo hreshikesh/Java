@@ -15,4 +15,8 @@ public class Laptop {
     public String toString() {
         return "Laptop brand " + this.brand + " processor " + this.processor + " Laptop Price " + this.price ;
     }
+    @Override
+    public int hashCode() {
+        return -123;
+    }
 }

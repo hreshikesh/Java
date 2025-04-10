@@ -15,6 +15,10 @@ public class Charger {
     public String toString() {
         return "Charger brand: " + brand + ", output power: " + outputPower + "W, price: " + price;
     }
+    @Override
+    public int hashCode() {
+        return 580;
+    }
 
 
 }

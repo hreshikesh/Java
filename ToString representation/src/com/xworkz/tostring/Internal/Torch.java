@@ -15,4 +15,8 @@ public class Torch {
     public String toString() {
         return "Torch brand " + this.brand + " lumens " + this.lumens + " price " + this.price;
     }
+    @Override
+    public int hashCode() {
+        return -21;
+    }
 }

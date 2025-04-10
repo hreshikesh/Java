@@ -15,4 +15,8 @@ public class Dustbin {
     public String toString() {
         return "Dustbin material: " + material + ", capacity: " + capacity + "L, color: " + color;
     }
+    @Override
+    public int hashCode() {
+        return 789;
+    }
 }
