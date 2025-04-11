@@ -19,4 +19,19 @@ public class Zoo {
     public int hashCode() {
         return -2140000000;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Zoo) {
+                Zoo zoo1 = this;
+                Zoo zoo2 = (Zoo) obj;
+                if (zoo1.ticketPrice == zoo2.ticketPrice) {
+                    System.out.println("Same ticket price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

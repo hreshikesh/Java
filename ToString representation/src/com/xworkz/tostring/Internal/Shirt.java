@@ -19,4 +19,18 @@ public class Shirt {
     public int hashCode() {
         return -1478985;
     }
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Shirt) {
+                Shirt shirt1 = this;
+                Shirt shirt2 = (Shirt) obj;
+                if (shirt1.cost == shirt2.cost) {
+                    System.out.println("Same cost");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

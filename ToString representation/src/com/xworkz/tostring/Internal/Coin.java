@@ -19,4 +19,20 @@ public class Coin {
     public int hashCode() {
         return 5058940;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Coin) {
+                Coin coin1 = this;
+                Coin coin2 = (Coin) obj;
+                if (coin1.coinName.equals(coin2.coinName) && coin1.material.equals(coin2.material)) {
+                    System.out.println("Same coinName and material");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

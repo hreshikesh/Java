@@ -19,4 +19,20 @@ public class Lamp {
     public int hashCode() {
         return -8;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Lamp) {
+                Lamp l1 = this;
+                Lamp l2 = (Lamp) obj;
+                if (l1.color.equals(l2.color)) {
+                    System.out.println("Same color");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

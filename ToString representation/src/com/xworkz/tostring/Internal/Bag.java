@@ -19,4 +19,19 @@ public class Bag {
     public int hashCode() {
         return 1;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Bag) {
+                Bag bag1 = this;
+                Bag bag2 = (Bag) obj;
+                if (bag1.capacity == bag2.capacity) {
+                    System.out.println("Same capacity");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -17,4 +17,20 @@ public class Speaker {
     public int hashCode() {
         return -14;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Speaker) {
+                Speaker speaker1 = this;
+                Speaker speaker2 = (Speaker) obj;
+                if (speaker1.brand.equals(speaker2.brand) && speaker1.price == speaker2.price) {
+                    System.out.println("Same brand and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

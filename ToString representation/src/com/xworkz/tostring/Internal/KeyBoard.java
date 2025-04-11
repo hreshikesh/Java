@@ -19,4 +19,19 @@ public class KeyBoard {
     public int hashCode() {
         return -7895;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof KeyBoard) {
+                KeyBoard k1 = this;
+                KeyBoard k2 = (KeyBoard) obj;
+                if (k1.noOfKeys == k2.noOfKeys) {
+                    System.out.println("Same number of keys");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,19 @@ public class Park {
     public int hashCode() {
         return -98752;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Park) {
+                Park p1 = this;
+                Park p2 = (Park) obj;
+                if (p1.area == p2.area) {
+                    System.out.println("Same area");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

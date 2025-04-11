@@ -19,4 +19,20 @@ public class SunGlasses {
     public int hashCode() {
         return 2004;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof SunGlasses) {
+                SunGlasses s1 = this;
+                SunGlasses s2 = (SunGlasses) obj;
+                if (s1.price == s2.price) {
+                    System.out.println("Same price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

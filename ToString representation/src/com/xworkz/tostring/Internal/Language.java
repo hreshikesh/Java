@@ -19,4 +19,20 @@ public class Language {
     public int hashCode() {
         return 0;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Language) {
+                Language l1 = this;
+                Language l2 = (Language) obj;
+                if (l1.age == l2.age) {
+                    System.out.println("Same age");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

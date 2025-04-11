@@ -19,4 +19,20 @@ public class Remote {
     public int hashCode() {
         return 51551020;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Remote) {
+                Remote r1 = this;
+                Remote r2 = (Remote) obj;
+                if (r1.company.equals(r2.company) && r1.color.equals(r2.color)) {
+                    System.out.println("Same company and color");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

@@ -19,4 +19,21 @@ public class Pharmacy {
     public int hashCode() {
         return 578946;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Pharmacy) {
+                Pharmacy pharmacy1 = this;
+                Pharmacy pharmacy2 = (Pharmacy) obj;
+                if (pharmacy1.name.equals(pharmacy2.name) && pharmacy1.location.equals(pharmacy2.location)) {
+                    System.out.println("Same name and location");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+
 }

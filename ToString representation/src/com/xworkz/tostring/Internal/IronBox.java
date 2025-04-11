@@ -20,4 +20,20 @@ public class IronBox {
     public int hashCode() {
         return -1;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof IronBox) {
+                IronBox ironBox1 = this;
+                IronBox ironBox2 = (IronBox) obj;
+                if (ironBox1.brand.equals(ironBox2.brand) && ironBox1.wattage == ironBox2.wattage) {
+                    System.out.println("Same brand and wattage");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

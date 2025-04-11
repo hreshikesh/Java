@@ -19,4 +19,20 @@ public class Wallet {
     public int hashCode() {
         return -148985;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Wallet) {
+                Wallet wallet1 = this;
+                Wallet wallet2 = (Wallet) obj;
+                if (wallet1.brand.equals(wallet2.brand) && wallet1.material.equals(wallet2.material)) {
+                    System.out.println("Same brand and material");
+                    return false;
+                }
+            }
+        }
+        return false;
+    }
+
 }

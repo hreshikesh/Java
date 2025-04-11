@@ -20,4 +20,20 @@ public class Chess {
     public int hashCode() {
         return 58700;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Chess) {
+                Chess c1 = this;
+                Chess c2 = (Chess) obj;
+                if (c1.boardMaterial.equals(c2.boardMaterial) && c1.pieceColor.equals(c2.pieceColor)) {
+                    System.out.println("Same board material and piece color");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

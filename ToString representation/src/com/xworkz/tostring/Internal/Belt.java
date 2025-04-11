@@ -19,4 +19,20 @@ public class Belt {
     public int hashCode() {
         return 150;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Belt) {
+                Belt belt1 = this;
+                Belt belt2 = (Belt) obj;
+                if (belt1.material.equals(belt2.material) && belt1.size.equals(belt2.size)) {
+                    System.out.println("Same material and size");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

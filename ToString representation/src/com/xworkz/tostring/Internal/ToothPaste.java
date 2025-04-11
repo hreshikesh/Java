@@ -19,4 +19,20 @@ public class ToothPaste {
     public int hashCode() {
         return -2003;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof ToothPaste) {
+                ToothPaste toothPaste1 = this;
+                ToothPaste toothPaste2 = (ToothPaste) obj;
+                if (toothPaste1.brand.equals(toothPaste2.brand) && toothPaste1.flavor.equals(toothPaste2.flavor)) {
+                    System.out.println("Same brand and flavor");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

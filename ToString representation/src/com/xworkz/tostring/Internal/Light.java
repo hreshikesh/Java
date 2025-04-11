@@ -19,4 +19,20 @@ public class Light {
     public int hashCode() {
         return -57;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Light) {
+                Light light1 = this;
+                Light light2 = (Light) obj;
+                if (light1.cost == light2.cost) {
+                    System.out.println("Same cost");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

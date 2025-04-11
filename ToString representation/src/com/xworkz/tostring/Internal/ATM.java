@@ -20,4 +20,20 @@ public class ATM {
     public int hashCode() {
         return 101;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof ATM) {
+                ATM a1 = this;
+                ATM a2 = (ATM) obj;
+                if (a1.location.equals(a2.location)) {
+                    System.out.println("Same location");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

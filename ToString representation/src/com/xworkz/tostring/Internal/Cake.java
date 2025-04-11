@@ -19,4 +19,19 @@ public class Cake {
     public int hashCode() {
         return 500;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Cake) {
+                Cake cake1 = this;
+                Cake cake2 = (Cake) obj;
+                if (cake1.price == cake2.price) {
+                    System.out.println("Same price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

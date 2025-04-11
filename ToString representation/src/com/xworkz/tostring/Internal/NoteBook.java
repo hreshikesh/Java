@@ -17,4 +17,19 @@ public class NoteBook {
     public int hashCode() {
         return -1258;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof NoteBook) {
+                NoteBook noteBook1 = this;
+                NoteBook noteBook2 = (NoteBook) obj;
+                if (noteBook1.brand.equals(noteBook2.brand) && noteBook1.pages == noteBook2.pages) {
+                    System.out.println("Same brand and number of pages");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

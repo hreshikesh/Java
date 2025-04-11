@@ -19,5 +19,20 @@ public class Console {
     public int hashCode() {
         return 240000;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Console) {
+                Console c1 = this;
+                Console c2 = (Console) obj;
+                if (c1.manufacturer.equals(c2.manufacturer)) {
+                    System.out.println("Same manufacturer");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
 }

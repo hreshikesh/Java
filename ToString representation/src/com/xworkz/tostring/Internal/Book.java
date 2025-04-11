@@ -19,4 +19,19 @@ public class Book {
     public int hashCode() {
         return 5;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Book) {
+                Book book1 = this;
+                Book book2 = (Book) obj;
+                if (book1.cost == book2.cost) {
+                    System.out.println("Same cost");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

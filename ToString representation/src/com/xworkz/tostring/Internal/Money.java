@@ -19,4 +19,20 @@ public class Money {
     public int hashCode() {
         return 108;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Money) {
+                Money m1 = this;
+                Money m2 = (Money) obj;
+                if (m1.amount == m2.amount) {
+                    System.out.println("Same amount");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

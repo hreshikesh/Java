@@ -19,4 +19,20 @@ public class Stand {
     public int hashCode() {
         return -777777;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Stand) {
+                Stand s1 = this;
+                Stand s2 = (Stand) obj;
+                if (s1.type.equals(s2.type) && s1.color.equals(s2.color)) {
+                    System.out.println("Same type and color");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

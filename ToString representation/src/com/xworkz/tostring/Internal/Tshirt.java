@@ -19,4 +19,20 @@ public class Tshirt {
     public int hashCode() {
         return -181845;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Tshirt) {
+                Tshirt t1 = this;
+                Tshirt t2 = (Tshirt) obj;
+                if (t1.brand.equals(t2.brand) && t1.color.equals(t2.color)) {
+                    System.out.println("Same brand and color");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

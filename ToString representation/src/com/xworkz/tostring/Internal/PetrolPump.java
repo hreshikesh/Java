@@ -19,4 +19,20 @@ public class PetrolPump {
     public int hashCode() {
         return -87;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof PetrolPump) {
+                PetrolPump p1 = this;
+                PetrolPump p2 = (PetrolPump) obj;
+                if (p1.location.equals(p2.location)) {
+                    System.out.println("Same location");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

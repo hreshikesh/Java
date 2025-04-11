@@ -19,4 +19,20 @@ public class Scooter {
     public int hashCode() {
         return -982585;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Scooter) {
+                Scooter s1 = this;
+                Scooter s2 = (Scooter) obj;
+                if (s1.price == s2.price) {
+                    System.out.println("Same price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

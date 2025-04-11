@@ -19,4 +19,20 @@ public class Battery {
     public int hashCode() {
         return 105;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Battery) {
+                Battery b1 = this;
+                Battery b2 = (Battery) obj;
+                if (b1.company.equals(b2.company) && b1.capacity == b2.capacity) {
+                    System.out.println("Same company and capacity");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

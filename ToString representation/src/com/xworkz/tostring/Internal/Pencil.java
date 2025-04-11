@@ -19,4 +19,20 @@ public class Pencil {
     public int hashCode() {
         return 78;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Pencil) {
+                Pencil pencil1 = this;
+                Pencil pencil2 = (Pencil) obj;
+                if (pencil1.brand.equals(pencil2.brand) && pencil1.type.equals(pencil2.type)) {
+                    System.out.println("Same brand and type");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

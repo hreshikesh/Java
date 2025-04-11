@@ -20,5 +20,21 @@ public class Bottle {
     public int hashCode() {
         return 15;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Bottle) {
+                Bottle b1 = this;
+                Bottle b2 = (Bottle) obj;
+                if (b1.capacity == b2.capacity) {
+                    System.out.println("Same capacity");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
 }

@@ -19,4 +19,20 @@ public class Metro {
     public int hashCode() {
         return -78;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Metro) {
+                Metro m1 = this;
+                Metro m2 = (Metro) obj;
+                if (m1.ticketPrice == m2.ticketPrice) {
+                    System.out.println("Same ticket price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

@@ -19,6 +19,21 @@ public class WoodenBox {
     public int hashCode() {
         return -9285;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof WoodenBox) {
+                WoodenBox w1 = this;
+                WoodenBox w2 = (WoodenBox) obj;
+                if (w1.weight == w2.weight) {
+                    System.out.println("Same weight");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
 
 }

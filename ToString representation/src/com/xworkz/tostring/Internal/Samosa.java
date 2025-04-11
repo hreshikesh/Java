@@ -19,4 +19,19 @@ public class Samosa {
     public int hashCode() {
         return -9585;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Samosa) {
+                Samosa s1 = this;
+                Samosa s2 = (Samosa) obj;
+                if (s1.cost == s2.cost) {
+                    System.out.println("Same cost");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
