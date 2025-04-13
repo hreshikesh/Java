@@ -19,5 +19,23 @@ public class Sofa {
     public int hashCode() {
         return -9;
     }
-
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Sofa) {
+                Sofa sofa1 = this;
+                Sofa sofa2 = (Sofa) obj;
+                if (sofa1.material.equals(sofa2.material) &&
+                        sofa1.seats == sofa2.seats &&
+                        sofa1.price == sofa2.price) {
+                    System.out.println("Same material, seats, and price");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
+
+
+}

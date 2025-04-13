@@ -24,9 +24,9 @@ public class Samosa {
         if (obj != null) {
             System.out.println("obj is not null");
             if (obj instanceof Samosa) {
-                Samosa s1 = this;
-                Samosa s2 = (Samosa) obj;
-                if (s1.cost == s2.cost) {
+                Samosa samosa1 = this;
+                Samosa samosa2 = (Samosa) obj;
+                if (samosa1.cost == samosa2.cost) {
                     System.out.println("Same cost");
                     return true;
                 }

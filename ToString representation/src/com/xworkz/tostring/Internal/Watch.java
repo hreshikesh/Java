@@ -22,9 +22,9 @@ public class Watch {
         if (obj != null) {
             System.out.println("Object is not null");
             if (obj instanceof Watch) {
-                Watch w1 = this;
-                Watch w2 = (Watch) obj;
-                if (w1.brand.equals(w2.brand) && w1.price == w2.price) {
+                Watch watch1 = this;
+                Watch watch2 = (Watch) obj;
+                if (watch1.brand.equals(watch2.brand) && watch1.price == watch2.price) {
                     System.out.println("Same brand and price");
                     return true;
                 }

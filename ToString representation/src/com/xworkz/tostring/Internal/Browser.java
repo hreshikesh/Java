@@ -20,5 +20,23 @@ public class Browser {
     public int hashCode() {
         return 1020;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Browser) {
+                Browser browser1 = this;
+                Browser browser2 = (Browser) obj;
+                if (browser1.name.equals(browser2.name) &&
+                        browser1.version.equals(browser2.version) &&
+                        browser1.releaseYear == browser2.releaseYear) {
+                    System.out.println("Same name, version and release year");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
 }

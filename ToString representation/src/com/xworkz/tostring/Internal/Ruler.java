@@ -19,6 +19,24 @@ public class Ruler {
     public int hashCode() {
         return -985;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Ruler) {
+                Ruler ruler1 = this;
+                Ruler ruler2 = (Ruler) obj;
+                if (ruler1.length == ruler2.length &&
+                        ruler1.material.equals(ruler2.material) &&
+                        ruler1.price == ruler2.price) {
+                    System.out.println("Same length, material, and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
 
 }

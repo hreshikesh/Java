@@ -24,9 +24,9 @@ public class Stand {
         if (obj != null) {
             System.out.println("obj is not null");
             if (obj instanceof Stand) {
-                Stand s1 = this;
-                Stand s2 = (Stand) obj;
-                if (s1.type.equals(s2.type) && s1.color.equals(s2.color)) {
+                Stand stand1 = this;
+                Stand stand2 = (Stand) obj;
+                if (stand1.type.equals(stand2.type) && stand1.color.equals(stand2.color)) {
                     System.out.println("Same type and color");
                     return true;
                 }

@@ -19,4 +19,22 @@ public class Apple {
     public int hashCode() {
         return 110;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Apple) {
+                Apple apple1 = this;
+                Apple apple2 = (Apple) obj;
+                if (apple1.variety.equals(apple2.variety) &&
+                        apple1.weight == apple2.weight &&
+                        apple1.price == apple2.price) {
+                    System.out.println("Same variety, weight and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

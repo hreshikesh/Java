@@ -24,9 +24,9 @@ public class Scooter {
         if (obj != null) {
             System.out.println("obj is not null");
             if (obj instanceof Scooter) {
-                Scooter s1 = this;
-                Scooter s2 = (Scooter) obj;
-                if (s1.price == s2.price) {
+                Scooter scooter1 = this;
+                Scooter scooter2 = (Scooter) obj;
+                if (scooter1.price == scooter2.price) {
                     System.out.println("Same price");
                     return true;
                 }

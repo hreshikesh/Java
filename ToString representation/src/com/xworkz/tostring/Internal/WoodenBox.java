@@ -24,9 +24,9 @@ public class WoodenBox {
         if (obj != null) {
             System.out.println("obj is not null");
             if (obj instanceof WoodenBox) {
-                WoodenBox w1 = this;
-                WoodenBox w2 = (WoodenBox) obj;
-                if (w1.weight == w2.weight) {
+                WoodenBox woodenBox1 = this;
+                WoodenBox woodenBox2 = (WoodenBox) obj;
+                if (woodenBox1.weight == woodenBox2.weight) {
                     System.out.println("Same weight");
                     return true;
                 }

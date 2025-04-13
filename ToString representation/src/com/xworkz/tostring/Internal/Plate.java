@@ -19,6 +19,24 @@ public class Plate {
     public int hashCode() {
         return 102000;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Plate) {
+                Plate plate1 = this;
+                Plate plate2 = (Plate) obj;
+                if (plate1.material.equals(plate2.material) &&
+                        plate1.diameter == plate2.diameter &&
+                        plate1.price == plate2.price) {
+                    System.out.println("Same material, diameter and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
 
 }

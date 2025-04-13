@@ -19,5 +19,22 @@ public class CreditCard {
     public int hashCode() {
         return 8500;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof CreditCard) {
+                CreditCard card1 = this;
+                CreditCard card2 = (CreditCard) obj;
+                if (card1.bankName.equals(card2.bankName) &&
+                        card1.cardNumber == card2.cardNumber &&
+                        card1.creditLimit == card2.creditLimit) {
+                    System.out.println("Same bankName, cardNumber, and creditLimit");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
 }

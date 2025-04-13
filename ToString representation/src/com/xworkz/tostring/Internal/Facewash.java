@@ -19,4 +19,21 @@ public class Facewash {
     public int hashCode() {
         return 789;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Facewash) {
+                Facewash facewash1 = this;
+                Facewash facewash2 = (Facewash) obj;
+                if (facewash1.brand.equals(facewash2.brand) &&
+                        facewash1.volume == facewash2.volume &&
+                        facewash1.price == facewash2.price) {
+                    System.out.println("Same brand, volume, and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

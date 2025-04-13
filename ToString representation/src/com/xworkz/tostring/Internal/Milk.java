@@ -19,6 +19,24 @@ public class Milk {
     public int hashCode() {
         return -785;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Milk) {
+                Milk milk1 = this;
+                Milk milk2 = (Milk) obj;
+                if (milk1.brand.equals(milk2.brand) &&
+                        milk1.volume == milk2.volume &&
+                        milk1.price == milk2.price) {
+                    System.out.println("Same brand, volume and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
 
 }

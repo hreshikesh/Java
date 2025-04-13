@@ -19,6 +19,24 @@ public class Cap {
     public int hashCode() {
         return 550;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Cap) {
+                Cap cap1 = this;
+                Cap cap2 = (Cap) obj;
+                if (cap1.color.equals(cap2.color) &&
+                        cap1.brand.equals(cap2.brand) &&
+                        cap1.price == cap2.price) {
+                    System.out.println("Same color, brand and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
 
 }

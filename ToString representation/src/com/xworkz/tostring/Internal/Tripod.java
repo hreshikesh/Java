@@ -19,5 +19,23 @@ public class Tripod {
     public int hashCode() {
         return -918585;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Tripod) {
+                Tripod tripod1 = this;
+                Tripod tripod2 = (Tripod) obj;
+                if (tripod1.material.equals(tripod2.material) &&
+                        tripod1.maxHeight == tripod2.maxHeight &&
+                        tripod1.price == tripod2.price) {
+                    System.out.println("Same material, max height, and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
 }

@@ -19,4 +19,22 @@ public class Star {
     public int hashCode() {
         return 4;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Star) {
+                Star star1 = this;
+                Star star2 = (Star) obj;
+                if (star1.name.equals(star2.name) &&
+                        star1.temperature == star2.temperature &&
+                        star1.distanceFromEarth == star2.distanceFromEarth) {
+                    System.out.println("Same name, temperature, and distance from Earth");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

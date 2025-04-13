@@ -19,4 +19,22 @@ public class Mug {
     public int hashCode() {
         return -1111;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Mug) {
+                Mug mug1 = this;
+                Mug mug2 = (Mug) obj;
+                if (mug1.material.equals(mug2.material) &&
+                        mug1.color.equals(mug2.color) &&
+                        mug1.price == mug2.price) {
+                    System.out.println("Same material, color and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

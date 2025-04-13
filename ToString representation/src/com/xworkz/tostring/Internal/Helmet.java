@@ -20,4 +20,21 @@ public class Helmet {
     public int hashCode() {
         return super.hashCode();
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Helmet) {
+                Helmet helmet = this;
+                Helmet helmet1 = (Helmet) obj;
+                if (helmet.brand.equals(helmet1.brand) && helmet.size.equals(helmet1.size) && helmet.color.equals(helmet1.color)) {
+                    System.out.println("Same brand, size, and color");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+
 }

@@ -24,9 +24,9 @@ public class SunGlasses {
         if (obj != null) {
             System.out.println("obj is not null");
             if (obj instanceof SunGlasses) {
-                SunGlasses s1 = this;
-                SunGlasses s2 = (SunGlasses) obj;
-                if (s1.price == s2.price) {
+                SunGlasses sunGlasses1 = this;
+                SunGlasses sunGlasses2 = (SunGlasses) obj;
+                if (sunGlasses1.price == sunGlasses2.price) {
                     System.out.println("Same price");
                     return true;
                 }

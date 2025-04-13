@@ -19,6 +19,24 @@ public class Charger {
     public int hashCode() {
         return 580;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Charger) {
+                Charger charger1 = this;
+                Charger charger2 = (Charger) obj;
+                if (charger1.brand.equals(charger2.brand) &&
+                        charger1.outputPower == charger2.outputPower &&
+                        charger1.price == charger2.price) {
+                    System.out.println("Same brand, outputPower and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
 
 }

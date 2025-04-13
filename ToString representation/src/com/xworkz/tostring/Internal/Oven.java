@@ -22,9 +22,9 @@ public class Oven {
         if (obj != null) {
             System.out.println("Object is not null");
             if (obj instanceof Oven) {
-                Oven o1 = this;
-                Oven o2 = (Oven) obj;
-                if (o1.capacity == o2.capacity && o1.price == o2.price) {
+                Oven oven1 = this;
+                Oven oven2 = (Oven) obj;
+                if (oven1.capacity == oven2.capacity && oven1.price == oven2.price) {
                     System.out.println("Same capacity and price");
                     return true;
                 }

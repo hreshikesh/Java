@@ -24,9 +24,9 @@ public class PetrolPump {
         if (obj != null) {
             System.out.println("obj is not null");
             if (obj instanceof PetrolPump) {
-                PetrolPump p1 = this;
-                PetrolPump p2 = (PetrolPump) obj;
-                if (p1.location.equals(p2.location)) {
+                PetrolPump petrolPump1 = this;
+                PetrolPump petrolPump2 = (PetrolPump) obj;
+                if (petrolPump1.location.equals(petrolPump2.location)) {
                     System.out.println("Same location");
                     return true;
                 }

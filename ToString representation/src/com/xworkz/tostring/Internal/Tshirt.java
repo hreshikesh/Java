@@ -24,9 +24,9 @@ public class Tshirt {
         if (obj != null) {
             System.out.println("obj is not null");
             if (obj instanceof Tshirt) {
-                Tshirt t1 = this;
-                Tshirt t2 = (Tshirt) obj;
-                if (t1.brand.equals(t2.brand) && t1.color.equals(t2.color)) {
+                Tshirt tshirt1 = this;
+                Tshirt tshirt2 = (Tshirt) obj;
+                if (tshirt1.brand.equals(tshirt2.brand) && tshirt1.color.equals(tshirt2.color)) {
                     System.out.println("Same brand and color");
                     return true;
                 }

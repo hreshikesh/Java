@@ -24,9 +24,9 @@ public class Mobile {
         if (obj != null) {
             System.out.println("obj is not null");
             if (obj instanceof Mobile) {
-                Mobile m1 = this;
-                Mobile m2 = (Mobile) obj;
-                if (m1.model.equals(m2.model)) {
+                Mobile  mobile1 = this;
+                Mobile mobile2 = (Mobile) obj;
+                if ( mobile1.model.equals(mobile2.model)) {
                     System.out.println("Same model and price");
                     return true;
                 }

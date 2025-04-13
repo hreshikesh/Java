@@ -19,6 +19,24 @@ public class Umbrella {
     public int hashCode() {
         return 1587995;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Umbrella) {
+                Umbrella umbrella1 = this;
+                Umbrella umbrella2 = (Umbrella) obj;
+                if (umbrella1.color.equals(umbrella2.color) &&
+                        umbrella1.length == umbrella2.length &&
+                        umbrella1.price == umbrella2.price) {
+                    System.out.println("Same color, length and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
 
 }

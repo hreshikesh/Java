@@ -19,5 +19,23 @@ public class Stapler {
     public int hashCode() {
         return 8888;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Stapler) {
+                Stapler stapler1 = this;
+                Stapler stapler2 = (Stapler) obj;
+                if (stapler1.brand.equals(stapler2.brand) &&
+                        stapler1.pinsCapacity == stapler2.pinsCapacity &&
+                        stapler1.price == stapler2.price) {
+                    System.out.println("Same brand, pinsCapacity and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
 }

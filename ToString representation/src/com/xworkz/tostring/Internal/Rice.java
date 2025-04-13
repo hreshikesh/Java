@@ -19,6 +19,24 @@ public class Rice {
     public int hashCode() {
         return 4858;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Rice) {
+                Rice rice1 = this;
+                Rice rice2 = (Rice) obj;
+                if (rice1.type.equals(rice2.type) &&
+                        rice1.quantityInKg == rice2.quantityInKg &&
+                        rice1.price == rice2.price) {
+                    System.out.println("Same type, quantityInKg, and price");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
 }
 

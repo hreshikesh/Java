@@ -24,9 +24,9 @@ public class Money {
         if (obj != null) {
             System.out.println("obj is not null");
             if (obj instanceof Money) {
-                Money m1 = this;
-                Money m2 = (Money) obj;
-                if (m1.amount == m2.amount) {
+                Money money1 = this;
+                Money money2 = (Money) obj;
+                if (money1.amount == money2.amount) {
                     System.out.println("Same amount");
                     return true;
                 }

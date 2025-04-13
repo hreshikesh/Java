@@ -24,9 +24,9 @@ public class Metro {
         if (obj != null) {
             System.out.println("obj is not null");
             if (obj instanceof Metro) {
-                Metro m1 = this;
-                Metro m2 = (Metro) obj;
-                if (m1.ticketPrice == m2.ticketPrice) {
+                Metro metro1 = this;
+                Metro metro2 = (Metro) obj;
+                if (metro1.ticketPrice == metro2.ticketPrice) {
                     System.out.println("Same ticket price");
                     return true;
                 }

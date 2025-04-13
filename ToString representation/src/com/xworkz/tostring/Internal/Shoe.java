@@ -24,9 +24,9 @@ public class Shoe {
         if (obj != null) {
             System.out.println("obj is not null");
             if (obj instanceof Shoe) {
-                Shoe s1 = this;
-                Shoe s2 = (Shoe) obj;
-                if (s1.size == s2.size) {
+                Shoe shoe1 = this;
+                Shoe shoe2 = (Shoe) obj;
+                if (shoe1.size == shoe2.size) {
                     System.out.println("Same size");
                     return true;
                 }

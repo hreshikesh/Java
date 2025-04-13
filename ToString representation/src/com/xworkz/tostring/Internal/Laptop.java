@@ -24,9 +24,9 @@ public class Laptop {
         if (obj != null) {
             System.out.println("obj is not null");
             if (obj instanceof Laptop) {
-                Laptop l1 = this;
-                Laptop l2 = (Laptop) obj;
-                if (l1.processor.equals(l2.processor)) {
+                Laptop laptop1 = this;
+                Laptop laptop2 = (Laptop) obj;
+                if (laptop1.processor.equals(laptop2.processor)) {
                     System.out.println("Same processor");
                     return true;
                 }
