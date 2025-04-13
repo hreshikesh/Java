@@ -1,0 +1,37 @@
+package com.xworkz.ToString.Internal;
+
+public class Bag {
+    private String brand;
+    private String color;
+    private int capacity;
+
+    public Bag(String brand,String color,int capacity){
+        this.brand=brand;
+        this.color=color;
+        this.capacity=capacity;
+    }
+
+    @Override
+    public String toString() {
+        return "bag brand "+this.brand+" Bag color "+this.color+" Bag capacity "+this.capacity;
+    }
+    @Override
+    public int hashCode() {
+        return 1;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("obj is not null");
+            if (obj instanceof Bag) {
+                Bag bag1 = this;
+                Bag bag2 = (Bag) obj;
+                if (bag1.capacity == bag2.capacity) {
+                    System.out.println("Same capacity");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
