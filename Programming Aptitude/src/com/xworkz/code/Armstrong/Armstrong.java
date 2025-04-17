@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Armstrong {
     public static void main(String[] args) {
-        int digit;
+        
         System.out.println("Enter a number");
         Scanner scanner = new Scanner(System.in);
         int no = scanner.nextInt();
