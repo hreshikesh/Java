@@ -38,4 +38,13 @@ public class Oven implements Appliance, Bakery {
         System.out.println("Oven is making pastry");
 
     }
+    @Override
+    public void applianceInfo() {
+        System.out.println("Oven applianceInfo is important");
+    }
+    @Override
+    public void bakeryInfo() {
+        System.out.println("Oven bakeryInfo is important");
+    }
+
 }

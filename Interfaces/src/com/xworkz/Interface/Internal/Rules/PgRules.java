@@ -7,4 +7,8 @@ public interface PgRules {
 
     void payRent();
 
+    default void pgInfo() {
+        System.out.println("PG information");
+    }
+
 }

@@ -5,4 +5,8 @@ public interface Laptop {
     void runProgram();
     void shutDown();
 
+    default void laptopInfo() {
+        System.out.println("Laptop information");
+    }
+
 }

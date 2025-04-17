@@ -17,6 +17,10 @@ public class StJosephs implements SchoolRule {
     public void followDressCode() {
         System.out.println("Students must follow the school's dress code.");
     }
+    @Override
+    public void schoolInfo() {
+        System.out.println("This is St. Joseph's School.");
+    }
 
 
 }

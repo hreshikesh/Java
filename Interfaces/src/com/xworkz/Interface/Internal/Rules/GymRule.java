@@ -5,4 +5,8 @@ public interface GymRule {
     void diet();
     void weigth();
 
+    default void gymInfo() {
+        System.out.println("Gym information");
+    }
+
 }

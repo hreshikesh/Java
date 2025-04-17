@@ -7,6 +7,10 @@ public interface ExamRule {
 
     void examPattern();
 
+    default void examInfo() {
+        System.out.println("Exam information");
+    }
+
 
 
 }

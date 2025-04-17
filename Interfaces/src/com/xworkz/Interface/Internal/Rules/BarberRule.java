@@ -7,4 +7,8 @@ public interface BarberRule {
 
     void barberHygiene();
 
+    default void barberInfo() {
+        System.out.println("Barber information");
+    }
+
 }

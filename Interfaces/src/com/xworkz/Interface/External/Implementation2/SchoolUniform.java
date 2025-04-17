@@ -92,4 +92,29 @@ public class SchoolUniform implements SchoolRule, Shirt, Pant, CleaningRules, Se
         System.out.println("SchoolUniform printShirt is important");
 
     }
+
+    @Override
+    public void cleaningInfo() {
+        System.out.println("SchoolUniform cleaningInfo is important");
+    }
+
+    @Override
+    public void pantInfo() {
+        System.out.println("SchoolUniform pantInfo is important");
+    }
+
+    @Override
+    public void schoolInfo() {
+        System.out.println("SchoolUniform schoolInfo is important");
+    }
+
+    @Override
+    public void securityInfo() {
+        System.out.println("SchoolUniform securityInfo is important");
+    }
+
+    @Override
+    public void shirtInfo() {
+        System.out.println("SchoolUniform shirtInfo is important");
+    }
 }

@@ -17,4 +17,8 @@ public class Driving implements DrivingRules {
     public void drivingEmergencyProcedures() {
         System.out.println("Know the emergency procedures in case of an accident.");
     }
+    @Override
+    public void drivingInfo() {
+        System.out.println("Driving is the act of controlling a vehicle.");
+    }
 }

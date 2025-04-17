@@ -17,4 +17,8 @@ public class PetOwner implements PetRule {
     public void groom() {
         System.out.println("Grooming the pet");
     }
+    @Override
+    public void petInfo() {
+        System.out.println("This is a pet owner");
+    }
 }

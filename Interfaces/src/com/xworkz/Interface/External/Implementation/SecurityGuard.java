@@ -17,4 +17,8 @@ public class SecurityGuard implements SecurityRules {
     public void checkWindows() {
         System.out.println("Security guard is checking the windows");
     }
+    @Override
+    public void securityInfo() {
+        System.out.println("This is a Security Guard");
+    }
 }

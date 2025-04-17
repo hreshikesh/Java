@@ -17,4 +17,8 @@ public class SLV implements Rocket {
     public void rocketSpeed() {
         System.out.println("SLV Rocket Speed");
     }
+    @Override
+    public void rocketInfo() {
+        System.out.println("This is SLV Rocket");
+    }
 }

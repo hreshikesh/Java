@@ -17,4 +17,9 @@ public class Barber implements BarberRule {
     public void barberHygiene() {
         System.out.println("Barber hygiene is crucial to prevent infections and ensure client satisfaction.");
     }
+    @Override
+    public void barberInfo() {
+        System.out.println("This is a barber with expertise in various hairstyles and grooming techniques.");
+    }
+
 }

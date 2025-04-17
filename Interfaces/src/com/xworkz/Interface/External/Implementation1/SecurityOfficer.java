@@ -39,4 +39,12 @@ public class SecurityOfficer implements SecurityRules, SchoolRule {
         System.out.println("SecurityOfficer checkWindows is important");
 
     }
+    @Override
+    public void securityInfo() {
+        System.out.println("SecurityOfficer securityInfo is important");
+    }
+    @Override
+    public void schoolInfo() {
+        System.out.println("SecurityOfficer schoolInfo is important");
+    }
 }

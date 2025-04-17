@@ -19,4 +19,8 @@ public class JBLSpeaker implements Speaker {
         System.out.println("Decreasing volume of JBL Speaker");
 
     }
+    @Override
+    public void speakerInfo() {
+        System.out.println("This is JBL Speaker");
+    }
 }

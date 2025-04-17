@@ -17,6 +17,10 @@ public class Bathroom implements Room {
     public void getRoomColor() {
         System.out.println("White");
     }
+    @Override
+    public void roomInfo() {
+        System.out.println("This is a bathroom with modern amenities.");
+    }
 
 
 }

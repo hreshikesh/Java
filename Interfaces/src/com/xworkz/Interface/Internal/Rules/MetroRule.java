@@ -7,5 +7,9 @@ public interface MetroRule {
 
     void timing();
 
+    default void metroInfo() {
+        System.out.println("Metro information");
+    }
+
 
 }

@@ -5,4 +5,8 @@ public interface HospitalRule {
     void provideCare();
     void hygiene();
 
+    default void hospitalInfo() {
+        System.out.println("Hospital information");
+    }
+
 }

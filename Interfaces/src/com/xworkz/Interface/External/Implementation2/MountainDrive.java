@@ -85,4 +85,29 @@ public class MountainDrive  implements Car, DrivingRules, OffRoad,ShowRoomRule, 
         System.out.println("MountainDrive showRoomProducts is important");
 
     }
+
+    @Override
+    public void carInfo() {
+        System.out.println("MountainDrive carInfo is important");
+    }
+
+    @Override
+    public void drivingInfo() {
+        System.out.println("MountainDrive drivingInfo is important");
+    }
+
+    @Override
+    public void offRoadInfo() {
+        System.out.println("MountainDrive offRoadInfo is important");
+    }
+
+    @Override
+    public void showRoomInfo() {
+        System.out.println("MountainDrive showRoomInfo is important");
+    }
+
+    @Override
+    public void vehicleInfo() {
+        System.out.println("MountainDrive vehicleInfo is important");
+    }
 }

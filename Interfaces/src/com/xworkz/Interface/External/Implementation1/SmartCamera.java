@@ -33,4 +33,8 @@ public class SmartCamera implements Camera, Browser {
     public void filter() {
         System.out.println("Applying filter");
     }
+    @Override
+    public void cameraInfo() {
+        System.out.println("Camera information");
+    }
 }

@@ -17,6 +17,10 @@ public class PeterPant implements Pant {
     public void foldPant() {
         System.out.println("Folding Peter Pant");
     }
+    @Override
+    public void pantInfo() {
+        System.out.println("This is Peter Pant");
+    }
 
 
 }

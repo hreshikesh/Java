@@ -17,4 +17,8 @@ public class KSRTC implements Bus {
     public void stopEngine() {
         System.out.println("KSRTC bus engine stopped");
     }
+    @Override
+    public void busInfo() {
+        System.out.println("This is KSRTC bus");
+    }
 }

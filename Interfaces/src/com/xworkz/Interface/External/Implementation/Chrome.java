@@ -17,4 +17,11 @@ public class Chrome implements Browser {
     public void refreshBrowser() {
         System.out.println("Refreshing Chrome Browser");
     }
+
+    @Override
+    public  void browserInfo() {
+        System.out.println("This is Chrome, a fast and secure web browser.");
+    }
+
+
 }

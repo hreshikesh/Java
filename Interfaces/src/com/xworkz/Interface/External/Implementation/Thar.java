@@ -19,4 +19,8 @@ public class Thar implements OffRoad {
         System.out.println("Driving the Thar on rough terrain");
 
     }
+    @Override
+    public void offRoadInfo() {
+        System.out.println("This is a Thar Off-Road vehicle");
+    }
 }

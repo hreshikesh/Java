@@ -20,4 +20,8 @@ public class DiningTable implements Table {
         System.out.println("Folding the dining table.");
 
     }
+    @Override
+    public void tableInfo() {
+        System.out.println("This is a dining table, used for dining purposes.");
+    }
 }

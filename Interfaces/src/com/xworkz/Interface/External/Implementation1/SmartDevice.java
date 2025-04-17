@@ -40,4 +40,12 @@ public class SmartDevice implements SmartPhone, SmartWatch {
         System.out.println("SmartDevice checkHeartRate is important");
 
     }
+    @Override
+    public void smartphoneInfo() {
+        System.out.println("SmartDevice smartPhoneInfo is important");
+    }
+    @Override
+    public void watchInfo() {
+        System.out.println("SmartDevice smartWatchInfo is important");
+    }
 }

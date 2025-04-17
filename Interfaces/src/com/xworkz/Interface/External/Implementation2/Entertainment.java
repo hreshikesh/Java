@@ -93,4 +93,29 @@ public class Entertainment implements Appliance, Browser, Camera, Computer, Smar
         System.out.println("Entertainment browse is important");
 
     }
+
+    @Override
+    public void applianceInfo() {
+        System.out.println("Entertainment applianceInfo is important");
+    }
+
+    @Override
+    public void browserInfo() {
+        System.out.println("BrowserInfo is important");
+    }
+
+    @Override
+    public void cameraInfo() {
+        System.out.println("Entertainment cameraInfo is important");
+    }
+
+    @Override
+    public void computerInfo() {
+        System.out.println("Entertainment computerInfo is important");
+    }
+
+    @Override
+    public void smartphoneInfo() {
+        System.out.println("Entertainment smartphoneInfo is important");
+    }
 }

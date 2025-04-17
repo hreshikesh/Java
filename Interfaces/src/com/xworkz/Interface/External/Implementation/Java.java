@@ -17,4 +17,9 @@ public class Java implements JavaRules {
     public void indentation() {
         System.out.println("Java uses indentation for code readability");
     }
+
+    @Override
+    public void javaInfo() {
+        System.out.println("This is Java programming language");
+    }
 }

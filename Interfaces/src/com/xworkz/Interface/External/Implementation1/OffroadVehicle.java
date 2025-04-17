@@ -37,4 +37,9 @@ public class OffroadVehicle implements OffRoad, DrivingRules {
     public void driveOnRoughTerrain() {
         System.out.println("OffroadVehicle driveOnRoughTerrain is important");
     }
+
+    @Override
+    public void offRoadInfo() {
+        System.out.println("OffroadVehicle offRoadInfo is important");
+    }
 }

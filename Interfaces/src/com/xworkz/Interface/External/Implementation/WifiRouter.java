@@ -19,4 +19,8 @@ public class WifiRouter implements Router {
         System.out.println("Resetting the WiFi router");
 
     }
+    @Override
+    public void routerInfo() {
+        System.out.println("This is a WiFi router");
+    }
 }

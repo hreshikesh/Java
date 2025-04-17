@@ -93,4 +93,29 @@ public class MusicAlbum implements GuitarRule, Laptop, Language, Speaker, SongRu
         System.out.println("MusicAlbum decreaseVolume is important");
 
     }
+
+    @Override
+    public void guitarInfo() {
+        System.out.println("MusicAlbum guitarInfo is important");
+    }
+
+    @Override
+    public void languageInfo() {
+        System.out.println("MusicAlbum languageInfo is important");
+    }
+
+    @Override
+    public void laptopInfo() {
+        System.out.println("MusicAlbum laptopInfo is important");
+    }
+
+    @Override
+    public void songInfo() {
+        System.out.println("MusicAlbum songInfo is important");
+    }
+
+    @Override
+    public void speakerInfo() {
+        System.out.println("MusicAlbum speakerInfo is important");
+    }
 }

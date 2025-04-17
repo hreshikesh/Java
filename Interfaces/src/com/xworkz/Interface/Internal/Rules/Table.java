@@ -6,4 +6,8 @@ public interface Table {
     void clean();
     void fold();
 
+    default void tableInfo() {
+        System.out.println("Table information");
+    }
+
 }

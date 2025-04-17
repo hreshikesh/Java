@@ -19,4 +19,8 @@ public class Iphone implements SmartPhone {
         System.out.println("Browsing the internet on iPhone");
 
     }
+    @Override
+    public void smartphoneInfo() {
+        System.out.println("This is an iPhone");
+    }
 }

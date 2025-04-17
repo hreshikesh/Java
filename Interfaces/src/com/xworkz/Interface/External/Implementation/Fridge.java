@@ -18,6 +18,10 @@ public class Fridge implements Appliance {
     public void getStatus() {
         System.out.println("Fridge is running");
     }
+    @Override
+    public void applianceInfo() {
+        System.out.println("Fridge information");
+    }
 
 
 }

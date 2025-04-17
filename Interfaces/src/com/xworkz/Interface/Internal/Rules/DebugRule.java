@@ -7,4 +7,8 @@ public interface DebugRule {
 
 
     void debugCodeReview();
+
+    default void debugInfo() {
+        System.out.println("Debugging information");
+    }
 }

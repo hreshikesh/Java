@@ -7,4 +7,8 @@ public interface TaxiRule {
 
     void taxiDriver();
 
+    default void taxiInfo() {
+        System.out.println("Taxi information");
+    }
+
 }

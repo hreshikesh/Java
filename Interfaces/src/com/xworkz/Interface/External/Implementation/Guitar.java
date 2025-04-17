@@ -17,4 +17,8 @@ public class Guitar implements GuitarRule {
     public void perform() {
         System.out.println("Performing with the guitar");
     }
+    @Override
+    public void guitarInfo() {
+        System.out.println("This is a guitar");
+    }
 }

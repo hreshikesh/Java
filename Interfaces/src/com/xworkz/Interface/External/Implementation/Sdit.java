@@ -17,4 +17,8 @@ public class Sdit implements CollegeRule {
     public void participateInActivities() {
         System.out.println("Participating in college activities");
     }
+    @Override
+    public void collegeInfo() {
+        System.out.println("This is SDIT College");
+    }
 }

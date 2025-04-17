@@ -17,4 +17,9 @@ public class AcerLaptop implements Laptop {
     public void shutDown() {
         System.out.println("Shutting down the Acer laptop");
     }
+
+    @Override
+    public void laptopInfo() {
+        System.out.println("This is an Acer laptop with advanced features.");
+    }
 }

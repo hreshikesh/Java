@@ -7,4 +7,8 @@ public interface Sweet {
 
     void sellSweet();
 
+    default void sweetInfo() {
+        System.out.println("Sweet information");
+    }
+
 }

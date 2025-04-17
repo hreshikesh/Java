@@ -7,4 +7,8 @@ public interface Book {
 
     void publishBook();
 
+    default void bookInfo() {
+        System.out.println("Book information");
+    }
+
 }

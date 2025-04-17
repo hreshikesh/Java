@@ -5,16 +5,19 @@ import com.xworkz.Interface.Internal.Rules.*;
 public class CubbonPark implements Bicycle, Insect, ParkRule, PetRule, Clock {
     @Override
     public void pedal() {
+        System.out.println("CubbonPark pedal is important");
 
     }
 
     @Override
     public void brake() {
+        System.out.println("CubbonPark brake is important");
 
     }
 
     @Override
     public void ringBell() {
+        System.out.println("CubbonPark ringBell is important");
 
     }
 
@@ -83,10 +86,40 @@ public class CubbonPark implements Bicycle, Insect, ParkRule, PetRule, Clock {
         System.out.println("CubbonPark walk is important");
 
     }
-
     @Override
     public void groom() {
         System.out.println("CubbonPark groom is important");
 
     }
+
+    @Override
+    public void bicycleInfo() {
+        System.out.println("CubbonPark bicycleInfo is important");
+
+    }
+
+    @Override
+    public void clockInfo() {
+        System.out.println("CubbonPark clockInfo is important");
+    }
+
+    @Override
+    public void insectInfo() {
+        System.out.println("insectinfo is important");
+
+    }
+
+    @Override
+    public void parkInfo() {
+        System.out.println("parkinfo is important");
+    }
+
+    @Override
+    public void petInfo() {
+        System.out.println("petInfo is important");
+    }
+
+
+
+
 }

@@ -17,4 +17,8 @@ public class MTR implements RestaurantRule {
     public void cookFood() {
         System.out.println("Cooking food in MTR");
     }
+    @Override
+    public void restaurantInfo() {
+        System.out.println("This is MTR restaurant");
+    }
 }

@@ -5,4 +5,9 @@ public interface JavaRules {
     void objectName();
     void indentation();
 
+
+    default void javaInfo() {
+        System.out.println("Java information");
+    }
+
 }

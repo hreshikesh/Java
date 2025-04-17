@@ -17,4 +17,8 @@ public class Dell implements Computer {
     public void uninstallSoftware() {
         System.out.println("Uninstalling software from Dell");
     }
+    @Override
+    public void computerInfo() {
+        System.out.println("This is a Dell computer, known for its reliability and performance.");
+    }
 }

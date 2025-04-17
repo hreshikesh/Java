@@ -18,4 +18,8 @@ public class Novel implements Book {
     public void publishBook() {
         System.out.println("Publishing Novel");
     }
+    @Override
+    public void bookInfo() {
+        System.out.println("This is a Novel");
+    }
 }

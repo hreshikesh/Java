@@ -18,4 +18,9 @@ public class Trainee implements TraineeRule {
     public void traineeInsurance() {
         System.out.println("Trainee insurance is available");
     }
+
+    @Override
+    public void traineeInfo() {
+        System.out.println("This is a Trainee");
+    }
 }

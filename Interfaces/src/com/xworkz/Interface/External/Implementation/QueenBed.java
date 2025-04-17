@@ -18,4 +18,9 @@ public class QueenBed implements Bed {
         System.out.println("Relaxing on the queen bed");
     }
 
+    @Override
+    public void bedInfo() {
+        System.out.println("This is a queen bed");
+    }
+
 }

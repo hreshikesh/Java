@@ -86,4 +86,29 @@ public class Dessert implements Bakery, HomeRule,Fan, Sweet, TV{
         System.out.println("Dessert sellSweet is important");
 
     }
+    @Override
+    public void fanInfo() {
+        System.out.println("Dessert fanInfo is important");
+
+    }
+    @Override
+    public void homeInfo() {
+        System.out.println("Dessert homeInfo is important");
+
+    }
+    @Override
+    public void sweetInfo() {
+        System.out.println("Dessert sweetInfo is important");
+
+    }
+    @Override
+    public void tvInfo() {
+        System.out.println("Dessert tvInfo is important");
+
+    }
+    @Override
+    public void bakeryInfo() {
+        System.out.println("Dessert bakeryInfo is important");
+
+    }
 }

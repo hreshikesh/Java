@@ -21,4 +21,11 @@ public class CeilingFan implements Fan {
         System.out.println("Ceiling fan is rotating");
 
     }
+
+    @Override
+    public void fanInfo() {
+        System.out.println("This is a ceiling fan, providing cooling and air circulation.");
+    }
+
+
 }

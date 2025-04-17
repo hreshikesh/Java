@@ -39,4 +39,12 @@ public class MiningRobot implements MinerRules, Planet {
         System.out.println("MiningRobot planetPrice is important");
 
     }
+    @Override
+    public void minerInfo() {
+        System.out.println("MiningRobot minerInfo is important");
+    }
+    @Override
+    public void planetInfo() {
+        System.out.println("MiningRobot planetInfo is important");
+    }
 }

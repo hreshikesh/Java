@@ -67,4 +67,29 @@ public class Transport implements Bicycle, BMTCRule, Bus, MetroRule, OffRoad {
         System.out.println("Transport stopEngine is important");
 
     }
+
+    @Override
+    public void offRoadInfo() {
+        System.out.println("Transport offRoadInfo is important");
+    }
+
+    @Override
+    public void metroInfo() {
+        System.out.println("Transport metroInfo is important");
+    }
+
+    @Override
+    public void busInfo() {
+        System.out.println("Transport busInfo is important");
+    }
+
+    @Override
+    public void bicycleInfo() {
+        System.out.println("Transport bicycleInfo is important");
+    }
+
+    @Override
+    public void bmtcInfo() {
+        System.out.println("Transport bmtcInfo is important");
+    }
 }

@@ -17,4 +17,8 @@ public class Rectangle implements Shape {
     public void resize() {
         System.out.println("Resizing Rectangle");
     }
+    @Override
+    public void shapeInfo() {
+        System.out.println("This is a Rectangle");
+    }
 }

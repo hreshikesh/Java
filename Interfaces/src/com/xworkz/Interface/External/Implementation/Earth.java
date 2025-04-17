@@ -17,4 +17,8 @@ public class Earth implements Planet {
     public void planetPrice() {
         System.out.println("Earth is priceless.");
     }
+    @Override
+    public void planetInfo() {
+        System.out.println("Earth isa  planet");
+    }
 }

@@ -17,5 +17,9 @@ public class NammaMetro implements MetroRule {
     public void timing() {
         System.out.println("Timing is available");
     }
+    @Override
+    public void metroInfo() {
+        System.out.println("This is Namma Metro");
+    }
 
 }

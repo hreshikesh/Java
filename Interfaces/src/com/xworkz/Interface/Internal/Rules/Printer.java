@@ -5,4 +5,8 @@ public interface Printer {
     void scan();
     void copy();
 
+    default void printerInfo() {
+        System.out.println("Printer information");
+    }
+
 }

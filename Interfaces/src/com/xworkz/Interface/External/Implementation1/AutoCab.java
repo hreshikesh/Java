@@ -39,4 +39,14 @@ public class AutoCab implements Window, Vehicle {
         System.out.println("AutoCab slide is important");
 
     }
+
+    @Override
+    public void vehicleInfo() {
+        System.out.println("AutoCab vehicleInfo is important");
+    }
+
+    @Override
+    public void windowInfo() {
+        System.out.println("AutoCab windowInfo is important");
+    }
 }

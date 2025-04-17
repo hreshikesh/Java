@@ -7,7 +7,9 @@ public interface ParkRule {
 
     void facility();
 
-  ;
+    default void parkInfo() {
+        System.out.println("Park information");
+    }
 
 
 }

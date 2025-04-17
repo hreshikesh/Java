@@ -18,4 +18,9 @@ public class Bike implements Vehicle {
         System.out.println("Bike is accelerating");
     }
 
+    @Override
+    public void vehicleInfo() {
+        System.out.println("This is a bike, a two-wheeled motor vehicle.");
+    }
+
 }

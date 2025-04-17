@@ -5,5 +5,9 @@ public interface WeldingRules {
     void cut();
     void grind();
 
+    default void weldingInfo() {
+        System.out.println("Welding information");
+    }
+
 
 }

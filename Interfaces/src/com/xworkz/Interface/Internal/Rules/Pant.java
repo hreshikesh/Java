@@ -7,5 +7,9 @@ public interface Pant {
 
     void foldPant();
 
+    default void pantInfo() {
+        System.out.println("Pant information");
+    }
+
 
 }

@@ -39,4 +39,12 @@ public class Music implements SongRules, GuitarRule {
         System.out.println("Music pay is important");
 
     }
+    @Override
+    public void songInfo() {
+        System.out.println("Music songInfo is important");
+    }
+    @Override
+    public void guitarInfo() {
+        System.out.println("Music guitarInfo is important");
+    }
 }

@@ -94,4 +94,29 @@ public class PUCollege implements CollegeRule, Book, ExamRule, SecurityRules, Pr
         System.out.println("PUCollege checkWindows is important");
 
     }
+
+    @Override
+    public void bookInfo() {
+        System.out.println("PUCollege bookInfo is important");
+    }
+
+    @Override
+    public void collegeInfo() {
+        System.out.println("PUCollege collegeInfo is important");
+    }
+
+    @Override
+    public void examInfo() {
+        System.out.println("PUCollege examInfo is important");
+    }
+
+    @Override
+    public void printerInfo() {
+        System.out.println("PUCollege printerInfo is important");
+    }
+
+    @Override
+    public void securityInfo() {
+        System.out.println("PUCollege securityInfo is important");
+    }
 }

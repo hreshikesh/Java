@@ -17,4 +17,8 @@ public class Showroom implements ShowRoomRule {
     public void showRoomProducts() {
         System.out.println("Showroom products are available");
     }
+    @Override
+    public void showRoomInfo() {
+        System.out.println("This is a Showroom");
+    }
 }

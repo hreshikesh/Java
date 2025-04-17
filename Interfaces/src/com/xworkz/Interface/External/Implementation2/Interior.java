@@ -92,4 +92,29 @@ public class Interior implements HomeRule, Bed, Chair, Speaker, Light {
         System.out.println("Interior decreaseVolume is important");
 
     }
+
+    @Override
+    public void bedInfo() {
+        System.out.println("Interior bedInfo is important");
+    }
+
+    @Override
+    public void chairInfo() {
+        System.out.println("Interior chairInfo is important");
+    }
+
+    @Override
+    public void homeInfo() {
+        System.out.println("Interior homeInfo is important");
+    }
+
+    @Override
+    public void lightInfo() {
+        System.out.println("Interior lightInfo is important");
+    }
+
+    @Override
+    public void speakerInfo() {
+        System.out.println("Interior speakerInfo is important");
+    }
 }

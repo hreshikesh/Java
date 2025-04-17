@@ -40,4 +40,14 @@ public class CleaningStaff implements CleaningRules, SchoolRule {
         System.out.println("CleaningStaff followDressCode is important");
 
     }
+
+    @Override
+    public void cleaningInfo() {
+        System.out.println("CleaningRules is important");
+    }
+
+    @Override
+    public void schoolInfo() {
+        System.out.println("SchoolRule is important");
+    }
 }

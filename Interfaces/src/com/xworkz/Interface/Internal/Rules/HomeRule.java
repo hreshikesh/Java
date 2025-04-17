@@ -7,5 +7,9 @@ public interface HomeRule {
 
     void checkWindows();
 
+    default void homeInfo() {
+        System.out.println("Home information");
+    }
+
 
 }

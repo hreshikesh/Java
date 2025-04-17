@@ -39,4 +39,12 @@ public class RailwayIntern implements Train, TraineeRule {
         System.out.println("RailwayIntern traineeInsurance is important");
 
     }
+    @Override
+    public void trainInfo() {
+        System.out.println("RailwayIntern trainInfo is important");
+    }
+    @Override
+    public void traineeInfo() {
+        System.out.println("RailwayIntern traineeInfo is important");
+    }
 }

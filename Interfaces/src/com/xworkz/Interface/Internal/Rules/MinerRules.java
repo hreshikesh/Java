@@ -5,4 +5,8 @@ public interface MinerRules {
     void drill();
     void blast();
 
+    default void minerInfo() {
+        System.out.println("Miner information");
+    }
+
 }

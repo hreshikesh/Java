@@ -17,4 +17,8 @@ public class HDFC implements BankRule {
     public void deposit() {
         System.out.println("Depositing money in HDFC bank");
     }
+    @Override
+    public void bankInfo() {
+        System.out.println("Withdrawing money from HDFC bank");
+    }
 }

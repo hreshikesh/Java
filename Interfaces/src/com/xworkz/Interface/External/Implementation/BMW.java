@@ -17,4 +17,9 @@ public class BMW implements Car {
     public void speedDrive() {
         System.out.println("Speed Driving BMW");
     }
+
+    @Override
+    public void carInfo() {
+        System.out.println("This is a BMW, a luxury car brand.");
+    }
 }

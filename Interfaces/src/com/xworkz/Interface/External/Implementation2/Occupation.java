@@ -78,4 +78,24 @@ public class Occupation implements BarberRule, MinerRules, SaloonRule, SecurityR
         System.out.println("Occupation checkWindows is important");
 
     }
+
+    @Override
+    public void barberInfo() {
+        System.out.println("Occupation barberInfo is important");
+    }
+
+    @Override
+    public void minerInfo() {
+        System.out.println("Occupation minerInfo is important");
+    }
+
+    @Override
+    public void saloonInfo() {
+        System.out.println("Occupation saloonInfo is important");
+    }
+
+    @Override
+    public void securityInfo() {
+        System.out.println("Occupation securityInfo is important");
+    }
 }

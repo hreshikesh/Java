@@ -5,4 +5,8 @@ public interface CleaningRules {
     void mop();
     void dust();
 
+    default void cleaningInfo() {
+        System.out.println("Cleaning information");
+    }
+
 }

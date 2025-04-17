@@ -7,5 +7,9 @@ public interface Bakery {
 
     void makePastry();
 
+    default void bakeryInfo() {
+        System.out.println("Bakery information");
+    }
+
 
 }

@@ -17,4 +17,8 @@ public class SaiBalagiPg implements PgRules {
     public void payRent() {
         System.out.println("Paying rent for Sai Balagi PG");
     }
+    @Override
+    public void pgInfo() {
+        System.out.println("This is Sai Balagi PG");
+    }
 }

@@ -7,5 +7,9 @@ public interface SchoolRule {
 
     void followDressCode();
 
+    default void schoolInfo() {
+        System.out.println("School information");
+    }
+
 
 }

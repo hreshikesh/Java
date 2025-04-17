@@ -9,4 +9,8 @@ public interface BMTCRule {
 
     void timing();
 
+    default void bmtcInfo() {
+        System.out.println("BMTCRule information");
+    }
+
 }

@@ -17,4 +17,8 @@ public class Network implements NetworkRule {
     public void networkMonitoring() {
         System.out.println("Network monitoring is in place.");
     }
+    @Override
+    public void networkInfo() {
+        System.out.println("This is a network system.");
+    }
 }

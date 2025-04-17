@@ -6,4 +6,8 @@ public interface Oil {
     void sellOil();
 
     void useOil();
+
+    default void oilInfo() {
+        System.out.println("Oil information");
+    }
 }

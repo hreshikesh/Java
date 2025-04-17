@@ -7,4 +7,8 @@ public interface Shirt {
 
     void printShirt();
 
+    default void shirtInfo() {
+        System.out.println("Shirt information");
+    }
+
 }

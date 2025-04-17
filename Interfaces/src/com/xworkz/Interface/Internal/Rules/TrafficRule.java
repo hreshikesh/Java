@@ -9,5 +9,9 @@ public interface TrafficRule {
 
     void trafficSpeedLimits();
 
+    default void trafficInfo() {
+        System.out.println("Traffic information");
+    }
+
 
 }

@@ -17,4 +17,8 @@ public class PhilipsHairDryer implements HairDryer {
     public void adjustHeatLevel() {
         System.out.println("Adjusting heat level on Philips Hair Dryer.");
     }
+    @Override
+    public void hairDryerInfo() {
+        System.out.println("This is a Philips Hair Dryer.");
+    }
 }

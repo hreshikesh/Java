@@ -7,4 +7,8 @@ public interface Language {
 
     void read();
 
+    default void languageInfo() {
+        System.out.println("Language information");
+    }
+
 }

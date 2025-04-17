@@ -17,4 +17,9 @@ public class Exam implements ExamRule {
     public void examPattern() {
         System.out.println("The exam pattern includes multiple-choice questions and descriptive questions.");
     }
+
+    @Override
+    public void examInfo() {
+        System.out.println("An exam is a formal test");
+    }
 }

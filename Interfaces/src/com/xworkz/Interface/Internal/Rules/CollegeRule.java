@@ -8,4 +8,8 @@ public interface CollegeRule {
 
     void participateInActivities();
 
+    default void collegeInfo() {
+        System.out.println("College information");
+    }
+
 }

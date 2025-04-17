@@ -8,4 +8,8 @@ public interface SaloonRule {
     void saloonCustomerCare();
 
     void saloonHygiene();
+
+    default void saloonInfo() {
+        System.out.println("Saloon information");
+    }
 }

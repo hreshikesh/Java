@@ -17,4 +17,9 @@ public class Laddu implements Sweet {
     public void sellSweet() {
         System.out.println("Selling Laddu");
     }
+
+    @Override
+    public void sweetInfo() {
+        System.out.println("This is Laddu");
+    }
 }

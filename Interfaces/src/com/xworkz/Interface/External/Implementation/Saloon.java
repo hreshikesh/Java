@@ -17,4 +17,8 @@ public class Saloon implements SaloonRule {
     public void saloonHygiene() {
         System.out.println("Saloon hygiene is maintained");
     }
+    @Override
+    public void saloonInfo() {
+        System.out.println("This is a Saloon");
+    }
 }

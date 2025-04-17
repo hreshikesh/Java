@@ -17,4 +17,8 @@ public class Debug implements DebugRule {
     public void debugCodeReview() {
         System.out.println("Debug Code Review");
     }
+    @Override
+    public void debugInfo() {
+        System.out.println("This is Debug, a process of identifying and removing errors from software.");
+    }
 }

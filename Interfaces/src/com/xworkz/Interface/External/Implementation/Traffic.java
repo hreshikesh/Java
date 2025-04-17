@@ -18,4 +18,8 @@ public class Traffic implements TrafficRule {
     public void trafficSpeedLimits() {
         System.out.println("Traffic speed limits are available");
     }
+    @Override
+    public void trafficInfo() {
+        System.out.println("This is a Traffic system");
+    }
 }

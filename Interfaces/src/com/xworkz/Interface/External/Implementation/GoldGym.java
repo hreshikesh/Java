@@ -17,4 +17,8 @@ public class GoldGym implements GymRule {
     public void weigth() {
         System.out.println("Weight training in Gold Gym");
     }
+    @Override
+    public void gymInfo() {
+        System.out.println("This is Gold Gym");
+    }
 }

@@ -8,4 +8,8 @@ public interface Computer {
     void installSoftware();
 
     void uninstallSoftware();
+
+    default void computerInfo() {
+        System.out.println("Computer information");
+    }
 }

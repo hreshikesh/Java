@@ -39,4 +39,12 @@ public class SmartSpeaker implements Speaker, SongRules {
         System.out.println("SmartSpeaker decreaseVolume is important");
 
     }
+    @Override
+    public void speakerInfo() {
+        System.out.println("SmartSpeaker speakerInfo is important");
+    }
+    @Override
+    public void songInfo() {
+        System.out.println("SmartSpeaker songInfo is important");
+    }
 }

@@ -17,5 +17,9 @@ public class Fortis implements HospitalRule {
     public void hygiene() {
         System.out.println("Maintaining strict hygiene standards in the hospital.");
     }
+    @Override
+    public void hospitalInfo() {
+        System.out.println("Fortis is a hospital");
+    }
 
 }

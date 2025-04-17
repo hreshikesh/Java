@@ -17,4 +17,8 @@ public class Matsyagandha implements Train {
     public void trainSpeed() {
         System.out.println("Matsyagandha Train Speed");
     }
+    @Override
+    public void trainInfo() {
+        System.out.println("This is Matsyagandha Train");
+    }
 }

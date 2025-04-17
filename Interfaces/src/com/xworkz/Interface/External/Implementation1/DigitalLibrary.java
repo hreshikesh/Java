@@ -36,4 +36,12 @@ public class DigitalLibrary implements Browser,Book {
         System.out.println("Refreshing browser");
 
     }
+    @Override
+    public void bookInfo() {
+        System.out.println("Book information in digital library");
+    }
+    @Override
+    public void browserInfo() {
+        System.out.println("Browser information in digital library");
+    }
 }

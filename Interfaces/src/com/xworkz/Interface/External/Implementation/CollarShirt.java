@@ -17,4 +17,8 @@ public class CollarShirt implements Shirt {
     public void printShirt() {
         System.out.println("Printing Collar Shirt");
     }
+    @Override
+    public void shirtInfo() {
+        System.out.println("This is a collar shirt, known for its formal look.");
+    }
 }

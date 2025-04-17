@@ -39,4 +39,12 @@ public class Developer implements CompanyRule, Coding {
         System.out.println("Developer companyInsurance is important");
 
     }
+    @Override
+    public void codingInfo() {
+        System.out.println("Developer codingInfo is important");
+    }
+    @Override
+    public void companyInfo() {
+        System.out.println("Developer companyInfo is important");
+    }
 }

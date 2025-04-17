@@ -5,4 +5,8 @@ public interface Window {
     void close();
     void slide();
 
+    default void windowInfo() {
+        System.out.println("Window information");
+    }
+
 }

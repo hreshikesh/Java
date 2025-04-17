@@ -93,4 +93,29 @@ public class SmartCar implements Camera, Car, Clock, Computer, Door {
         System.out.println("SmartCar lock is important");
 
     }
+
+    @Override
+    public void cameraInfo() {
+        System.out.println("SmartCar cameraInfo is important");
+    }
+
+    @Override
+    public void carInfo() {
+        System.out.println("SmartCar carInfo is important");
+    }
+
+    @Override
+    public void clockInfo() {
+        System.out.println("SmartCar clockInfo is important");
+    }
+
+    @Override
+    public void computerInfo() {
+        System.out.println("SmartCar computerInfo is important");
+    }
+
+    @Override
+    public void doorInfo() {
+        System.out.println("SmartCar doorInfo is important");
+    }
 }

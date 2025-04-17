@@ -9,5 +9,9 @@ public interface ShowRoomRule {
 
     void showRoomProducts();
 
+    default void showRoomInfo() {
+        System.out.println("Showroom information");
+    }
+
 
 }

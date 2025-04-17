@@ -17,4 +17,8 @@ public class Welder implements WeldingRules {
     public void grind() {
         System.out.println("Welder is grinding");
     }
+    @Override
+    public void weldingInfo() {
+        System.out.println("Welder is welding");
+    }
 }

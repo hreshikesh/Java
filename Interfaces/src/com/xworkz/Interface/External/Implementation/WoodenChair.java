@@ -17,4 +17,8 @@ public class WoodenChair implements Chair {
     public void recline() {
         System.out.println("Reclining the wooden chair");
     }
+    @Override
+    public void chairInfo() {
+        System.out.println("This is a wooden chair");
+    }
 }

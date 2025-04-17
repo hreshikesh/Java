@@ -17,4 +17,8 @@ public class LedLight implements Light {
     public void dim() {
         System.out.println("LED light is dimmed");
     }
+    @Override
+    public void lightInfo() {
+        System.out.println("This is an LED light");
+    }
 }

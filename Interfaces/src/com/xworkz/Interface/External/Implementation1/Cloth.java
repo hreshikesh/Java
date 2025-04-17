@@ -39,4 +39,13 @@ public class Cloth implements Shirt, Pant {
         System.out.println("Cloth printShirt is important");
 
     }
+
+    @Override
+    public void pantInfo() {
+        System.out.println("Cloth pantInfo is important");
+    }
+    @Override
+    public void shirtInfo() {
+        System.out.println("Cloth shirtInfo is important");
+    }
 }

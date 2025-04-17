@@ -17,4 +17,11 @@ public class BMTC implements BMTCRule {
     public void timing() {
         System.out.println("Timing is available");
     }
+
+    @Override
+    public void bmtcInfo() {
+        System.out.println("This is BMTC, providing public transport services in Bangalore.");
+    }
+
+
 }

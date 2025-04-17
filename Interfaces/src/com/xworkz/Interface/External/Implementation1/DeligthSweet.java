@@ -40,4 +40,12 @@ public class DeligthSweet implements Sweet, Bakery {
         System.out.println("DeligthSweet sellSweet is important");
 
     }
+    @Override
+    public void bakeryInfo() {
+        System.out.println("DeligthSweet bakeryInfo is important");
+    }
+    @Override
+    public void sweetInfo() {
+        System.out.println("DeligthSweet sweetInfo is important");
+    }
 }

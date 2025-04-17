@@ -38,4 +38,12 @@ public class SmartFan implements Fan, HomeRule {
     public void checkWindows() {
         System.out.println("SmartFan checkWindows is important");
     }
+    @Override
+    public void fanInfo() {
+        System.out.println("SmartFan fanInfo is important");
+    }
+    @Override
+    public void homeInfo() {
+        System.out.println("SmartFan homeInfo is important");
+    }
 }

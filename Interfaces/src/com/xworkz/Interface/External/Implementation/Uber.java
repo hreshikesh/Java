@@ -17,4 +17,9 @@ public class Uber implements TaxiRule {
     public void taxiDriver() {
         System.out.println("Taxi driver is available");
     }
+
+    @Override
+    public void taxiInfo() {
+        System.out.println("This is a Taxi");
+    }
 }

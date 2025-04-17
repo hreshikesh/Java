@@ -18,4 +18,8 @@ public class Vaccum implements CleaningRules {
     public void dust() {
         System.out.println("Vaccum is dusting");
     }
+    @Override
+    public void cleaningInfo() {
+        System.out.println("Vaccum is cleaning");
+    }
 }

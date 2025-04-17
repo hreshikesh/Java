@@ -18,6 +18,10 @@ public class SlidingWindow implements  Window {
     public void slide() {
         System.out.println("Sliding window is sliding");
     }
+    @Override
+    public void windowInfo() {
+        System.out.println("This is a sliding window");
+    }
 
 
 }

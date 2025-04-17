@@ -7,6 +7,10 @@ public interface NetworkRule {
 
     void networkMonitoring();
 
+    default void networkInfo() {
+        System.out.println("Network information");
+    }
+
 
 
 }

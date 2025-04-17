@@ -28,6 +28,8 @@ public class Apartment implements Room, HomeRule {
 
     }
 
+
+
     @Override
     public void getRoomSize() {
         System.out.println("Apartment getRoomSize is important");
@@ -37,6 +39,18 @@ public class Apartment implements Room, HomeRule {
     @Override
     public void getRoomColor() {
         System.out.println("Apartment getRoomColor is important");
+
+    }
+
+
+    @Override
+    public void homeInfo() {
+        System.out.println("Apartment homeInfo is important");
+    }
+
+    @Override
+    public void roomInfo() {
+        System.out.println("Apartment roomInfo is important");
 
     }
 }

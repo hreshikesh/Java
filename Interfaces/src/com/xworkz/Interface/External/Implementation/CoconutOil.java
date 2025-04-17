@@ -17,4 +17,8 @@ public class CoconutOil implements Oil {
     public void useOil() {
         System.out.println("Using coconut oil");
     }
+    @Override
+    public void oilInfo() {
+        System.out.println("This is coconut oil, known for its health benefits.");
+    }
 }

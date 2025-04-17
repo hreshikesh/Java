@@ -17,4 +17,8 @@ public class StationMaster implements StationRule {
     public void maintenance() {
         System.out.println("Station maintenance is important");
     }
+    @Override
+    public void stationInfo() {
+        System.out.println("This is a Station");
+    }
 }

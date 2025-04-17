@@ -17,4 +17,8 @@ public class IdealBakery implements Bakery {
     public void makePastry() {
         System.out.println("Making pastry at Ideal Bakery");
     }
+    @Override
+    public void bakeryInfo() {
+        System.out.println("This is Ideal Bakery");
+    }
 }

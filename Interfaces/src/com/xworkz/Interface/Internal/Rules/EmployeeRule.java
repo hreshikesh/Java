@@ -7,5 +7,9 @@ public interface EmployeeRule {
 
     void employeeInsurance();
 
+    default void employeeInfo() {
+        System.out.println("Employee information");
+    }
+
 
 }

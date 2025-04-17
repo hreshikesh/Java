@@ -17,4 +17,8 @@ public class Kannada implements Language {
     public void read() {
         System.out.println("Reading Kannada");
     }
+    @Override
+    public void languageInfo() {
+        System.out.println("This is Kannada language");
+    }
 }

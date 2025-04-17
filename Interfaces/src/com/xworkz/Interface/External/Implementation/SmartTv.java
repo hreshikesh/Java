@@ -18,4 +18,8 @@ public class SmartTv implements TV{
         System.out.println("Changing channel on the Smart TV");
 
     }
+    @Override
+    public void tvInfo() {
+        System.out.println("This is a Smart TV");
+    }
 }

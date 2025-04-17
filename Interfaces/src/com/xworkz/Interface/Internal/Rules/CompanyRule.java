@@ -10,5 +10,9 @@ public interface CompanyRule {
 
     void companyInsurance();
 
+    default void companyInfo() {
+        System.out.println("Company information");
+    }
+
 
 }

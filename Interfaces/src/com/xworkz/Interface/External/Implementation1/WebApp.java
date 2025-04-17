@@ -33,4 +33,12 @@ public class WebApp implements Laptop, Coding {
     public void shutDown() {
         System.out.println("WebApp shutDown is important");
     }
+    @Override
+    public void codingInfo() {
+        System.out.println("WebApp codingInfo is important");
+    }
+    @Override
+    public void laptopInfo() {
+        System.out.println("WebApp laptopInfo is important");
+    }
 }

@@ -7,5 +7,9 @@ public interface Vehicle {
 
      void accelerate();
 
+        default void vehicleInfo() {
+            System.out.println("Vehicle information");
+        }
+
 
 }

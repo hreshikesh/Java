@@ -4,4 +4,9 @@ public interface TV {
     void turnOn();
     void turnOff();
     void changeChannel();
+
+    default void tvInfo() {
+        System.out.println("TV information");
+    }
+
 }

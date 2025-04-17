@@ -87,4 +87,29 @@ public class GameApp implements Coding, Computer, DebugRule, JavaRules, Laptop {
         System.out.println("GameApp indentation is important");
 
     }
+
+    @Override
+    public void codingInfo() {
+        System.out.println("GameApp codingInfo is important");
+    }
+
+    @Override
+    public void computerInfo() {
+        System.out.println("GameApp computerInfo is important");
+    }
+
+    @Override
+    public void debugInfo() {
+        System.out.println("GameApp debugInfo is important");
+    }
+
+    @Override
+    public void javaInfo() {
+        System.out.println("GameApp javaInfo is important");
+    }
+
+    @Override
+    public void laptopInfo() {
+        System.out.println("GameApp laptopInfo is important");
+    }
 }

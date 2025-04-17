@@ -91,4 +91,29 @@ public class Google implements CleaningRules, CompanyRule, Coding, EmployeeRule,
         System.out.println("Google shutDown is important");
 
     }
+
+    @Override
+    public void cleaningInfo() {
+        System.out.println("Google cleaningInfo is important");
+    }
+
+    @Override
+    public void codingInfo() {
+        System.out.println("Google codingInfo is important");
+    }
+
+    @Override
+    public void companyInfo() {
+        System.out.println("Google companyInfo is important");
+    }
+
+    @Override
+    public void employeeInfo() {
+        System.out.println("Google employeeInfo is important");
+    }
+
+    @Override
+    public void laptopInfo() {
+        System.out.println("Google laptopInfo is important");
+    }
 }

@@ -39,4 +39,12 @@ public class ProgrammerClock implements Clock, Coding {
         System.out.println("ProgrammerClock testCode is important");
 
     }
+    @Override
+    public void codingInfo() {
+        System.out.println("ProgrammerClock codingInfo is important");
+    }
+    @Override
+    public void clockInfo() {
+        System.out.println("ProgrammerClock clockInfo is important");
+    }
 }

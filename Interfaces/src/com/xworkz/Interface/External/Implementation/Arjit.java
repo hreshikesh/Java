@@ -17,4 +17,8 @@ public class Arjit implements SongRules {
     public void pay() {
         System.out.println("Pay for the song");
     }
+    @Override
+    public void songInfo() {
+        System.out.println("This is a song by Arjit Singh.");
+    }
 }

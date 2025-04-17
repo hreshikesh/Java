@@ -7,4 +7,8 @@ public interface Coding {
 
     void testCode();
 
+    default void codingInfo() {
+        System.out.println("Coding information");
+    }
+
 }

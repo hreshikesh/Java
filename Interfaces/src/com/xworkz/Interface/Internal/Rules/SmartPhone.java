@@ -5,4 +5,8 @@ public interface SmartPhone{
     void sendMessage();
     void browse();
 
+    default void smartphoneInfo() {
+        System.out.println("Smartphone information");
+    }
+
 }

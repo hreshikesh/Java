@@ -39,4 +39,12 @@ public class MetroDriver implements MetroRule, DrivingRules {
         System.out.println("MetroDriver timing is important");
 
     }
+    @Override
+    public void metroInfo() {
+        System.out.println("MetroDriver metroInfo is important");
+    }
+    @Override
+    public void drivingInfo() {
+        System.out.println("MetroDriver drivingInfo is important");
+    }
 }

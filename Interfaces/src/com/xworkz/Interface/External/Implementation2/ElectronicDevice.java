@@ -93,4 +93,31 @@ public class ElectronicDevice implements Appliance, Coding, HairDryer, Laptop, S
         System.out.println("ElectronicDevice browse is important");
 
     }
+    @Override
+    public void laptopInfo() {
+        System.out.println("ElectronicDevice laptopInfo is important");
+
+    }
+    @Override
+    public void codingInfo() {
+        System.out.println("ElectronicDevice codingInfo is important");
+
+    }
+    @Override
+    public void hairDryerInfo() {
+        System.out.println("ElectronicDevice hairDryerInfo is important");
+
+    }
+    @Override
+    public void smartphoneInfo() {
+        System.out.println("ElectronicDevice smartPhoneInfo is important");
+
+    }
+    @Override
+    public void applianceInfo() {
+        System.out.println("ElectronicDevice applianceInfo is important");
+
+    }
+
+  
 }

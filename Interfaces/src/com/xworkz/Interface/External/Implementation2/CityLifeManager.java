@@ -92,4 +92,12 @@ public class CityLifeManager implements Bicycle, BMTCRule, Book, Browser, Bus {
         System.out.println("CityLifeManager stopEngine is important");
 
     }
+    @Override
+    public void bicycleInfo() {
+        System.out.println("CityLifeManager bicycleInfo is important");
+    }
+    @Override
+    public void bmtcInfo() {
+        System.out.println("CityLifeManager bmtcInfo is important");
+    }
 }

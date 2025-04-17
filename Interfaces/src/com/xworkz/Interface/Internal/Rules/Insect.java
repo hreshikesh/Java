@@ -7,6 +7,10 @@ public interface Insect {
 
     void sting();
 
+    default void insectInfo() {
+        System.out.println("Insect information");
+    }
+
 
 
 }

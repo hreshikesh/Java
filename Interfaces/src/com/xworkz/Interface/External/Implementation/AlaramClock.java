@@ -18,4 +18,9 @@ public class AlaramClock implements Clock {
         System.out.println("Ticking");
     }
 
+    @Override
+    public void clockInfo() {
+        System.out.println("This is a digital clock with alarm features.");
+    }
+
 }

@@ -90,4 +90,12 @@ public class CollegeUniform implements CollegeRule, Shirt, Pant, CleaningRules, 
         System.out.println("CollegeUniform printShirt is important");
 
     }
+    @Override
+    public void securityInfo() {
+        System.out.println("CollegeUniform securityInfo is important");
+    }
+    @Override
+    public void cleaningInfo() {
+        System.out.println("CollegeUniform cleaningInfo is important");
+    }
 }

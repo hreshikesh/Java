@@ -7,5 +7,9 @@ public interface Browser {
 
     void refreshBrowser();
 
+    default void browserInfo() {
+        System.out.println("Browser information");
+    }
+
 
 }

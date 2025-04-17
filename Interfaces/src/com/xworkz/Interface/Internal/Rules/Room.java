@@ -7,6 +7,10 @@ public interface Room {
 
     void getRoomColor();
 
+    default void roomInfo() {
+        System.out.println("Room information");
+    }
+
 
 
 }

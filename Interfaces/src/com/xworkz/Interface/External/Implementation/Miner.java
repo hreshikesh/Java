@@ -17,4 +17,8 @@ public class Miner implements MinerRules {
     public void blast() {
         System.out.println("Miner is blasting");
     }
+    @Override
+    public void minerInfo() {
+        System.out.println("This is a miner");
+    }
 }

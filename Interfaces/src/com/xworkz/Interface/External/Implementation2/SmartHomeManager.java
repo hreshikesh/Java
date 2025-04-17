@@ -93,4 +93,29 @@ public class SmartHomeManager implements Appliance, Bakery, BankRule, BarberRule
         System.out.println("SmartHomeManager relax is important");
 
     }
+
+    @Override
+    public void applianceInfo() {
+        System.out.println("SmartHomeManager applianceInfo is important");
+    }
+
+    @Override
+    public void bakeryInfo() {
+        System.out.println("SmartHomeManager bakeryInfo is important");
+    }
+
+    @Override
+    public void bankInfo() {
+        System.out.println("SmartHomeManager bankInfo is important");
+    }
+
+    @Override
+    public void barberInfo() {
+        System.out.println("SmartHomeManager barberInfo is important");
+    }
+
+    @Override
+    public void bedInfo() {
+        System.out.println("SmartHomeManager bedInfo is important");
+    }
 }

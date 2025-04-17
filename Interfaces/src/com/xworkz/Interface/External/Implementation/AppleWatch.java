@@ -17,4 +17,10 @@ public class AppleWatch implements SmartWatch {
     public void checkHeartRate() {
         System.out.println("Checking heart rate with Apple Watch");
     }
+
+    @Override
+    public void watchInfo() {
+        System.out.println("This is an Apple Watch with advanced health tracking features.");
+    }
+
 }

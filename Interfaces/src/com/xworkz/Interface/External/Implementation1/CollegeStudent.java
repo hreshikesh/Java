@@ -39,4 +39,12 @@ public class CollegeStudent implements JavaRules, CollegeRule {
         System.out.println("CollegeStudent indentation is important");
 
     }
+    @Override
+    public void javaInfo() {
+        System.out.println("CollegeStudent javaInfo is important");
+    }
+    @Override
+    public void collegeInfo() {
+        System.out.println("CollegeStudent collegeInfo is important");
+    }
 }

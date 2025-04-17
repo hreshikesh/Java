@@ -17,4 +17,9 @@ public class SmartAlarmClock implements WakeUpTimeRules {
     public void resetAlarm() {
         System.out.println("Resetting the alarm to a new time.");
     }
+
+    @Override
+    public void wakeUpInfo() {
+        System.out.println("Snoozing the alarm for a few more minutes.");
+    }
 }

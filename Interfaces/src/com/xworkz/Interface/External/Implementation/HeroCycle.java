@@ -17,4 +17,8 @@ public class HeroCycle implements Bicycle {
     public void ringBell() {
         System.out.println("Ringing the bell of the Hero cycle");
     }
+    @Override
+    public void bicycleInfo() {
+        System.out.println("This is a Hero cycle");
+    }
 }

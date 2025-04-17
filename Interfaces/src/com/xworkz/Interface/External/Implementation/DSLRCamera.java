@@ -17,4 +17,8 @@ public class DSLRCamera implements Camera {
     public void filter() {
         System.out.println("Applying a filter to the photo with the DSLR camera");
     }
+    @Override
+    public void cameraInfo() {
+        System.out.println("This is a DSLR camera, known for its high-quality images and versatility.");
+    }
 }

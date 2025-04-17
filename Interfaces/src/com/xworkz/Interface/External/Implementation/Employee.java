@@ -18,4 +18,8 @@ public class Employee implements EmployeeRule {
     public void employeeInsurance() {
         System.out.println("Employee insurance is available");
     }
+    @Override
+    public void employeeInfo() {
+        System.out.println("Employee is a person who works for a company or organization.");
+    }
 }

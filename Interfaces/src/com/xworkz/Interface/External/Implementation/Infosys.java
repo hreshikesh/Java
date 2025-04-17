@@ -17,4 +17,8 @@ public class Infosys implements CompanyRule {
     public void companyInsurance() {
         System.out.println("Infosys provides health insurance for employees and their families");
     }
+    @Override
+    public void companyInfo() {
+        System.out.println("This is Infosys");
+    }
 }

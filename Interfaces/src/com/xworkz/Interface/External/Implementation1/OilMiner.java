@@ -39,4 +39,12 @@ public class OilMiner implements MinerRules, Oil {
         System.out.println("OilMiner useOil is important");
 
     }
+    @Override
+    public void minerInfo() {
+        System.out.println("OilMiner minerInfo is important");
+    }
+    @Override
+    public void oilInfo() {
+        System.out.println("OilMiner oilInfo is important");
+    }
 }

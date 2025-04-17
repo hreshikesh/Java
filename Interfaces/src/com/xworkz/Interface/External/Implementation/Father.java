@@ -17,4 +17,8 @@ public class Father implements HomeRule {
     public void checkWindows() {
         System.out.println("Checking the windows");
     }
+    @Override
+    public void homeInfo() {
+        System.out.println("This is a home");
+    }
 }

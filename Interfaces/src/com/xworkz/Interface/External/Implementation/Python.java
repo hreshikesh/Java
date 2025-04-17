@@ -17,4 +17,8 @@ public class Python implements Coding {
     public void testCode() {
         System.out.println("Testing Python code");
     }
+    @Override
+    public void codingInfo() {
+        System.out.println("This is Python code");
+    }
 }

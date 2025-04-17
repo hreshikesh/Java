@@ -7,6 +7,10 @@ public interface TraineeRule {
 
     void traineeInsurance();
 
+    default void traineeInfo() {
+        System.out.println("Trainee information");
+    }
+
 
 
 }

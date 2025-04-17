@@ -17,4 +17,8 @@ public class LokSabha implements Parliment {
     public void discuss() {
         System.out.println("LokSabha discuss is important");
     }
+    @Override
+    public void parlimentInfo() {
+        System.out.println("This is LokSabha");
+    }
 }

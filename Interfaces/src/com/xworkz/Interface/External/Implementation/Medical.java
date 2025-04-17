@@ -17,5 +17,9 @@ public class Medical implements MedicalRule {
     public void medicalCustomerCare() {
         System.out.println("Medical customer care is provided.");
     }
+    @Override
+    public void medicalInfo() {
+        System.out.println("This is a medical facility.");
+    }
 
 }

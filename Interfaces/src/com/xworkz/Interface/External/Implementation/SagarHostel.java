@@ -17,4 +17,9 @@ public class SagarHostel implements HostelRule {
     public void penalty() {
         System.out.println("Penalty in Sagar Hostel");
     }
+
+    @Override
+    public void hostelInfo() {
+        System.out.println("This is Sagar Hostel");
+    }
 }

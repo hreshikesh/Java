@@ -17,4 +17,9 @@ public class Epson implements Printer {
     public void copy() {
         System.out.println("Copying with Epson printer");
     }
+
+    @Override
+    public void printerInfo() {
+        System.out.println("This is an Epson printer, known for its high-quality printing.");
+    }
 }

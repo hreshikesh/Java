@@ -35,4 +35,14 @@ public class CityBus implements BMTCRule, Bus {
     public void stopEngine() {
         System.out.println("Engine stopped");
     }
+
+    @Override
+    public void bmtcInfo() {
+        System.out.println("BMTCRule is important");
+    }
+
+    @Override
+    public void busInfo() {
+        System.out.println("Bus is important");
+    }
 }

@@ -17,5 +17,9 @@ public class FrontDoor implements Door {
     public void lock() {
         System.out.println("Locking the front door.");
     }
+    @Override
+    public void doorInfo() {
+        System.out.println("This is a front door");
+    }
 
 }

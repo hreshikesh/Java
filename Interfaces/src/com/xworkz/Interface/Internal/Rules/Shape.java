@@ -7,5 +7,9 @@ public interface Shape {
 
     void resize();
 
+    default void shapeInfo() {
+        System.out.println("Shape information");
+    }
+
 
 }

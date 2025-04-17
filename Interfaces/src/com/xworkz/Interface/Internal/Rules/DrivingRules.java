@@ -7,4 +7,8 @@ public interface  DrivingRules {
     void drivingSafetyRules();
 
     void drivingEmergencyProcedures();
+
+    default void drivingInfo() {
+        System.out.println("Driving information");
+    }
 }

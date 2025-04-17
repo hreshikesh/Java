@@ -6,4 +6,8 @@ public interface Soap {
     void soapColor();
 
     void soapPrice();
+
+    default void soapInfo() {
+        System.out.println("Soap information");
+    }
 }

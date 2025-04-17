@@ -93,4 +93,12 @@ public class Bengaluru implements CollegeRule, Coding, PgRules, MetroRule, Resta
         System.out.println("Bengaluru cookFood is important");
 
     }
+    @Override
+    public void collegeInfo() {
+        System.out.println("Bengaluru collegeInfo is important");
+    }
+    @Override
+    public void pgInfo() {
+        System.out.println("Bengaluru pgInfo is important");
+    }
 }

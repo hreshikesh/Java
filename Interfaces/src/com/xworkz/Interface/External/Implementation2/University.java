@@ -92,4 +92,24 @@ public class University implements CleaningRules, CollegeRule, SchoolRule, Drivi
         System.out.println("University checkWindows is important");
 
     }
+
+    @Override
+    public void cleaningInfo() {
+        System.out.println("University cleaningInfo is important");
+    }
+
+    @Override
+    public void collegeInfo() {
+        System.out.println("University collegeInfo is important");
+    }
+
+    @Override
+    public void drivingInfo() {
+        System.out.println("University drivingInfo is important");
+    }
+
+    @Override
+    public void schoolInfo() {
+        System.out.println("University schoolInfo is important");
+    }
 }

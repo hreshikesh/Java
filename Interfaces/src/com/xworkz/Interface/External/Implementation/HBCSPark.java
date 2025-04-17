@@ -17,4 +17,8 @@ public class HBCSPark implements ParkRule {
     public void facility() {
         System.out.println("Park facility is important");
     }
+    @Override
+    public void parkInfo() {
+        System.out.println("This is HBCS Park");
+    }
 }

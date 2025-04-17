@@ -34,4 +34,13 @@ public class DevelopmentTool implements Coding, DebugRule {
     public void debugCodeReview() {
         System.out.println("DevelopmentTool debugCodeReview is important");
     }
+    @Override
+    public void codingInfo() {
+        System.out.println("DevelopmentTool codingInfo is important");
+    }
+    @Override
+    public void debugInfo() {
+        System.out.println("DevelopmentTool debugInfo is important");
+    }
+
 }

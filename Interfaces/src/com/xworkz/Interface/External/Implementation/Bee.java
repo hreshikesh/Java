@@ -17,4 +17,9 @@ public class Bee implements Insect {
     public void sting() {
         System.out.println("Bee is stinging");
     }
+    @Override
+    public void insectInfo() {
+        System.out.println("This is a bee, known for its role in pollination and honey production.");
+    }
+
 }

@@ -18,4 +18,8 @@ public class Medimix implements Soap {
     public void soapPrice() {
         System.out.println("Medimix costs around 50 INR.");
     }
+    @Override
+    public void soapInfo() {
+        System.out.println("This is Medimix soap.");
+    }
 }

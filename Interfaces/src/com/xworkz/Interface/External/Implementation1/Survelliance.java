@@ -39,4 +39,12 @@ public class Survelliance implements SecurityRules, Camera {
         System.out.println("Survelliance checkWindows is important");
 
     }
+    @Override
+    public void securityInfo() {
+        System.out.println("Survelliance securityInfo is important");
+    }
+    @Override
+    public void cameraInfo() {
+        System.out.println("Survelliance cameraInfo is important");
+    }
 }

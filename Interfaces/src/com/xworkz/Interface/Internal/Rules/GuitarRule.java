@@ -5,4 +5,8 @@ public interface GuitarRule {
     void tune();
     void perform();
 
+    default void guitarInfo() {
+        System.out.println("Guitar information");
+    }
+
 }

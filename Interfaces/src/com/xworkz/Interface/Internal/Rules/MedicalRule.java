@@ -6,4 +6,8 @@ public interface MedicalRule {
     void medicalServices();
 
     void medicalCustomerCare();
+
+    default void medicalInfo() {
+        System.out.println("Medical information");
+    }
 }
