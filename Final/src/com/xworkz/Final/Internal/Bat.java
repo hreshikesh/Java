@@ -13,8 +13,12 @@ public class Bat {
         return brand;
     }
 
+//    no set method
+
 
     public final void hit(){
         System.out.println("Running hit");
     }
+
+    //method canot be accessed
 }
