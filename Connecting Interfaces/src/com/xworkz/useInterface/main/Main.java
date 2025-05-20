@@ -6,6 +6,7 @@ import com.xworkz.useInterface.users.*;
 
 public class Main {
     public static void main(String[] args) {
+
         Icc icc = new IndianCricketTeamIccImpl();
         BCCI userIcc = new BCCI(icc);
         userIcc.use();
