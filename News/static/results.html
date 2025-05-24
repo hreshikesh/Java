@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>News Results</title>
+    <style>
+        body, html {
+          margin: 0;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background: #f7f9fc*-;
+          color: #222;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+        }
+        header {
+          background-color: #08d9d6;
+          padding: 1rem 2rem;
+          color: #0f2027;
+          font-weight: 700;
+          font-size: 1.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        header a {
+          color: #0f2027;
+          text-decoration: none;
+          font-weight: 600;
+          border: 2px solid #0f2027;
+          padding: 0.3rem 0.8rem;
+          border-radius: 30px;
+          transition: background-color 0.3s ease;
+        }
+        header a:hover {
+          background-color: #0f2027;
+          color: #08d9d6;
+        }
+        main {
+          padding: 20px 40px;
+          flex-grow: 1;
+        }
+        h2 {
+          margin-top: 0;
+        }
+        .articles {
+          display: grid;
+          grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+          gap: 20px;
+        }
+        .article {
+          background: white;
+          border-radius: 10px;
+          box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+        }
+        .article img {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+        }
+        .article-content {
+          padding: 15px;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+        }
+        .article-content h3 {
+          margin: 0 0 10px;
+          font-size: 1.1rem;
+          line-height: 1.2;
+          flex-grow: 1;
+        }
+        .article-content p {
+          color: #555;
+          font-size: 0.9rem;
+          margin-bottom: 10px;
+        }
+        .article-content a {
+          align-self: flex-start;
+          text-decoration: none;
+          color: #08d9d6;
+          font-weight: 600;
+          border: 1.5px solid #08d9d6;
+          padding: 6px 12px;
+          border-radius: 20px;
+          transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .article-content a:hover {
+          background-color: #08d9d6;
+          color: white;
+        }
+        .error {
+          color: #d9534f;
+          font-weight: 700;
+          font-size: 1.2rem;
+          text-align: center;
+          margin-top: 2rem;
+        }
+        .loading {
+          font-size: 1.2rem;
+          text-align: center;
+          margin-top: 2rem;
+        }
+        @media(max-width: 600px) {
+          main {
+            padding: 10px 15px;
+          }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div>Worldwide News Results</div>
+    <a href="index.html" aria-label="Go back to search page">Home</a>
+</header>
+<main>
+    <h2 id="searchTitle">Loading results...</h2>
+    <div class="articles" id="articlesContainer"></div>
+    <div id="message"></div>
+</main>
+
+<script>
+    const apiKey = "0930a7a714fd4b699dd1676f2b6e454b";
+
+    // Helper to get query parameter by name
+    function getQueryParam(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    async function fetchNews(query) {
+      const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&sortBy=publishedAt&language=en&apiKey=${apiKey}`;
+      const container = document.getElementById('articlesContainer');
+      const message = document.getElementById('message');
+      const title = document.getElementById('searchTitle');
+
+      container.innerHTML = '';
+      message.textContent = '';
+      title.textContent = `Search results for: "${query}"`;
+
+      try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`API error: ${res.status}`);
+
+        const data = await res.json();
+        if (data.articles.length === 0) {
+          message.textContent = 'No articles found.';
+          return;
+        }
+
+        data.articles.forEach(article => {
+          const articleEl = document.createElement('article');
+          articleEl.className = 'article';
+
+          articleEl.innerHTML = `
+            ${article.urlToImage ? `<img src="${article.urlToImage}" alt="Article image">` : ''}
+            <div class="article-content">
+              <h3>${article.title}</h3>
+              <p>${article.description || ''}</p>
+              <a href="${article.url}" target="_blank" rel="noopener noreferrer">Read full article</a>
+            </div>
+          `;
+          container.appendChild(articleEl);
+        });
+      } catch (error) {
+        message.textContent = `Error fetching news: ${error.message}`;
+        message.className = 'error';
+      }
+    }
+
+    // Run on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      const query = getQueryParam('query');
+      if (!query) {
+        document.getElementById('searchTitle').textContent = 'No search term provided.';
+        return;
+      }
+      fetchNews(query);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>News Portal - Home</title>
+    <style>
+        body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; padding: 0;
+  background: url('https://elements-resized.envatousercontent.com/elements-video-cover-images/files/180940115/preview.jpg?w=500&cf_fit=cover&q=85&format=auto&s=01ee9101fc73b95f822f8880072ed2fb7df2c5a0fe7d633678c930e03106b34c') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  color: #222;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+<!--  background: rgba(255, 255, 255, 0.7);-->
+  pointer-events: none;
+  z-index: -1;
+}
+        nav {
+          background: #5F9EA0;
+          padding: 15px 30px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+          text-shadow: 2px 2px 4px black;
+        }
+        nav a {
+          color:#F8F8FF;
+          text-decoration: none;
+          font-weight: 700;
+          margin-left: 20px;
+          text-shadow: 2px 2px 4px black;
+        }
+        nav a:hover {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: black;
+            text-decoration: underline;
+
+        }
+        .logo {
+          font-size: 1.5rem;
+          font-weight: 800;
+          color:#F8F8FF;
+        }
+        main {
+          padding: 40px 20px;
+          max-width: 600px;
+          margin: auto;
+        }
+        h1 {
+          font-weight: 700;
+          margin-bottom: 20px;
+          color: white;
+        }
+        form {
+          display: flex;
+          margin-bottom: 20px;
+        }
+        input[type="text"] {
+          flex-grow: 1;
+          padding: 12px 15px;
+          border: 2px solid #08d9d6;
+          border-radius: 30px 0 0 30px;
+          font-size: 1rem;
+          outline: none;
+        }
+        button {
+          background: #5F9EA0;
+          border: none;
+          padding: 12px 25px;
+          font-weight: 700;
+          color: #0f2027;
+          cursor: pointer;
+          border-radius: 0 30px 30px 0;
+          transition: background-color 0.3s ease;
+        }
+        button:hover {
+          background: #06b3af;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">News Portal</div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="results.html?query=trending">Trending</a>
+    </div>
+</nav>
+
+<main>
+    <br><br>
+    <center><h1>Search Worldwide News</h1></center>
+    <br><br>
+    <!--    <h1>Search Worldwide News</h1>-->
+    <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Enter keywords (e.g. technology, sports)" required/>
+        <button type="submit">Search</button>
+    </form>
+</main>
+
+<script>
+    document.getElementById('searchForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const query = document.getElementById('searchInput').value.trim();
+      if (query) {
+        window.location.href = `results.html?query=${encodeURIComponent(query)}`;
+      }
+    });
+</script>
+
+</body>
+</html>
