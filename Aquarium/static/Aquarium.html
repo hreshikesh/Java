@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AquariumForm</title>
+</head>
+<body>
+<form action="aquarium" method="post">
+    <label>Model:</label>
+    <input type="text" name="model" placeholder="Enter model" required>
+    <br>
+    <label>Cost</label>
+    <input type="number" name="cost" placeholder="Enter cost" required>
+    <br>
+    <label>Size</label>
+    <select name="size" required>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+    <br>
+    <label>Company:</label>
+    <input type="text" name="company" placeholder="Enter company" required>
+    <br>
+    <label>Capacity</label>
+    <input type="number" name="capacity" placeholder="Enter capacity" required>
+    <br>
+    <input type="submit" value="Submit">
+
+</form>
+</body>
+</html>

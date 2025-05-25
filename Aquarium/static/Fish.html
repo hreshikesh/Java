@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fish Form</title>
+</head>
+<body>
+<form action="fish" method="post">
+    <h1>Fish Form</h1>
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Enter fish name" required>
+    <br>
+    <label>Color:</label>
+    <input type="text" name="color" placeholder="Enter fish color" required>
+    <br>
+    <label>LifeSpan:</label>
+    <select name="life_span" required>
+        <option value="none">select life span</option>
+        <option value="short">Short</option>
+        <option value="medium">Medium</option>
+        <option value="long">Long</option>
+    </select>
+    <br>
+    <label>Cost:</label>
+    <input type="number" name="cost" placeholder="Enter cost" required>
+    <br>
+    <label>Type:</label>
+    <input type="text" name="type" placeholder="Enter fish type" required>
+    <br>
+    <label>Size:</label>
+    <select name="size" required>
+        <option value="none">Select size</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

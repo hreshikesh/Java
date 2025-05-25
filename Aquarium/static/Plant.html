@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plant</title>
+</head>
+<body>
+<form action="plant" method="post">
+    <h1>Plant Form</h1>
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Enter plant name" required>
+    <br>
+    <label>Type:</label>
+    <select name="type" required>
+        <option value="none">Select type</option>
+        <option value="aquatic">Aquatic</option>
+        <option value="terrestrial">Terrestrial</option>
+    </select>
+    <br>
+    <label>Size:</label>
+    <select name="size" required>
+        <option value="none">Select size</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+    <br>
+    <label>Cost:</label>
+    <input type="number" name="cost" placeholder="Enter cost" required>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
