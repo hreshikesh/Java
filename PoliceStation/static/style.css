@@ -1,0 +1,14 @@
+.login-container{
+    border:3px black double;
+    width:500px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.theftResult{
+    font-size: 20px;
+    color: green;
+    text-align: center;
+
+
+
+}
