@@ -8,37 +8,40 @@
           integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="JobApplication.jsp">Job Application</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="BirthApplication.jsp">Birth Certificate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="PassportApplication.jsp">Passport</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="DeathApplication.jsp">Death Certification</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="DrivingApplication.jsp">Driving License</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="MarriageApplication.jsp">Marriage Certificate</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-<nav class="navbar bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">Navbar</span>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="JobApplication.jsp">Job Application</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="BirthApplication.jsp">Birth Certificate</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="PassportApplication.jsp">PassPort</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="DeathApplication.jsp">Death Certification</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="DrivingApplication.jsp">Driving License</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="MarriageApplication.jsp"> Marriage Certificate </a>
-                </li>
-            </ul>
-
-    </div>
-
-</nav>
 </body>
-
-
 </html>
