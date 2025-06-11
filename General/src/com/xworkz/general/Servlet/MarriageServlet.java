@@ -1,6 +1,8 @@
 package com.xworkz.general.Servlet;
 
 import com.xworkz.general.Dto.MarriageDto;
+import com.xworkz.general.Service.MarriageService;
+import com.xworkz.general.Service.MarriageServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -23,6 +25,9 @@ public class MarriageServlet extends HttpServlet {
         MarriageDto marriageDto = new MarriageDto(address, brideName, groomName, marriageDate, religion, witness1, witness2);
 
         System.out.println("Marriage details received: " + marriageDto);
+
+        MarriageService marriageService=new MarriageServiceImpl();
+        marriageService.validateAndSave(marriageDto);
 
 
 

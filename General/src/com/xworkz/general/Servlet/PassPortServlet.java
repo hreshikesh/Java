@@ -1,6 +1,8 @@
 package com.xworkz.general.Servlet;
 
 import com.xworkz.general.Dto.PassPortDto;
+import com.xworkz.general.Service.PassPortService;
+import com.xworkz.general.Service.PassPortServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,6 +32,9 @@ public class PassPortServlet extends HttpServlet {
 
         PassPortDto passPortDto = new PassPortDto(applicantName, converted_aadar, address, pan, country, state, city, converted_pincode, passportType, paymentRef);
         System.out.println("PassPortDto: " + passPortDto);
+
+        PassPortService passPortService=new PassPortServiceImpl();
+        passPortService.validateAndSave(passPortDto);
 
 
 

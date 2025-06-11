@@ -1,6 +1,8 @@
 package com.xworkz.general.Servlet;
 
 import com.xworkz.general.Dto.DeathDto;
+import com.xworkz.general.Service.DeathService;
+import com.xworkz.general.Service.DeathServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -23,5 +25,11 @@ public class DeathServlet extends HttpServlet {
 
         DeathDto deathDto = new DeathDto(name, cause, dateTime, age, certified, hospitalName, mannerofdeath);
         System.out.println("DeathDto: " + deathDto);
+
+
+        DeathService deathService= new DeathServiceImpl();
+        deathService.validateandsave(deathDto);
+
+
     }
 }

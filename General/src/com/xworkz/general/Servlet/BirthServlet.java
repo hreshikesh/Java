@@ -1,6 +1,8 @@
 package com.xworkz.general.Servlet;
 
 import com.xworkz.general.Dto.BirthDto;
+import com.xworkz.general.Service.BirthServiceImpl;
+import com.xworkz.general.Service.BirthService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -23,5 +25,10 @@ public class BirthServlet extends HttpServlet {
 
         BirthDto birthDto = new BirthDto(birthId, datetime, doctorName, fatherName, hospital, hospitalType, motherName, nurseName);
         System.out.println("BirthDto: " + birthDto);
+
+
+        BirthService service=new BirthServiceImpl();
+        service.validateandsave(birthDto);
+
     }
 }

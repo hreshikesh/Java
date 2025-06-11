@@ -1,6 +1,8 @@
 package com.xworkz.general.Servlet;
 
 import com.xworkz.general.Dto.JobDTO;
+import com.xworkz.general.Service.JobService;
+import com.xworkz.general.Service.JobServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -29,6 +31,11 @@ public class JobServlet extends HttpServlet {
         jobDTO.setExpectedSalary(expectedSalary);
         jobDTO.setExperience(experience);
         System.out.println("JobDTO: " + jobDTO);
+
+
+        JobService jobService=new JobServiceImpl();
+        jobService.validateandsave(jobDTO);
+
 
 
 

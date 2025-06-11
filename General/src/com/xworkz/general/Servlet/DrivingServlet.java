@@ -1,6 +1,8 @@
 package com.xworkz.general.Servlet;
 
 import com.xworkz.general.Dto.DrivingDto;
+import com.xworkz.general.Service.DrivingService;
+import com.xworkz.general.Service.DrivingServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,6 +24,10 @@ public class DrivingServlet extends HttpServlet {
 
         DrivingDto drivingDto = new DrivingDto(address, applicantName, appliedDate, mobile, vehicleType);
         System.out.println("Received DrivingDto: " + drivingDto);
+
+
+        DrivingService drivingService=new DrivingServiceImpl();
+        drivingService.validateAndSave(drivingDto);
 
 
     }
