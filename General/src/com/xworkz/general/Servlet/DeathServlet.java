@@ -28,7 +28,7 @@ public class DeathServlet extends HttpServlet {
 
 
         DeathService deathService= new DeathServiceImpl();
-        deathService.validateandsave(deathDto);
+        deathService.validateAndSave(deathDto);
 
 
     }

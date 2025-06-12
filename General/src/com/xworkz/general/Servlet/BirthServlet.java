@@ -28,7 +28,7 @@ public class BirthServlet extends HttpServlet {
 
 
         BirthService service=new BirthServiceImpl();
-        service.validateandsave(birthDto);
+        service.validateAndSave(birthDto);
 
     }
 }

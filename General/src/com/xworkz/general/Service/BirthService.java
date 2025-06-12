@@ -4,5 +4,5 @@ import com.xworkz.general.Dto.BirthDto;
 
 public interface BirthService {
 
-    public String validateandsave(BirthDto birthDto);
+    public String validateAndSave(BirthDto birthDto);
 }

@@ -34,7 +34,7 @@ public class JobServlet extends HttpServlet {
 
 
         JobService jobService=new JobServiceImpl();
-        jobService.validateandsave(jobDTO);
+        jobService.validateAndSave(jobDTO);
 
 
 
