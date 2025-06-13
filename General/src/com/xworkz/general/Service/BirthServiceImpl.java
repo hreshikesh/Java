@@ -12,6 +12,7 @@ public class BirthServiceImpl implements BirthService {
         if (dto != null) {
             System.out.println("BirthDto is not null, proceeding to save");
             birthReference.save(dto);
+            
         }
         return "Failure";
     }

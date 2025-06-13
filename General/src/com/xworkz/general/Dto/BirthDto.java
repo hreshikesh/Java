@@ -30,6 +30,38 @@ public class BirthDto implements Serializable {
                 '}';
     }
 
+    public String getBirthId() {
+        return birthId;
+    }
+
+    public String getDatetime() {
+        return datetime;
+    }
+
+    public String getDoctorName() {
+        return doctorName;
+    }
+
+    public String getFatherName() {
+        return fatherName;
+    }
+
+    public String getHospital() {
+        return hospital;
+    }
+
+    public String getHospitalType() {
+        return hospitalType;
+    }
+
+    public String getMotherName() {
+        return motherName;
+    }
+
+    public String getNurseName() {
+        return nurseName;
+    }
+
     public BirthDto(String birthId, String datetime, String doctorName, String fatherName, String hospital, String hospitalType, String motherName, String nurseName) {
         this.birthId = birthId;
         this.datetime = datetime;
@@ -40,4 +72,7 @@ public class BirthDto implements Serializable {
         this.motherName = motherName;
         this.nurseName = nurseName;
     }
+
+
+
 }
