@@ -6,7 +6,7 @@ public class DeathDto implements Serializable {
     private String name;
     private String cause;
     private String dateTime;
-    private String age;
+    private int age;
     private String certified;
     private String hospitalName;
     private String mannerofdeath;
@@ -15,7 +15,7 @@ public class DeathDto implements Serializable {
         System.out.println("no-args constructor in DeathDto");
     }
 
-    public DeathDto(String name, String cause, String dateTime, String age, String certified, String hospitalName,
+    public DeathDto(String name, String cause, String dateTime, int age, String certified, String hospitalName,
                     String mannerofdeath) {
 
         this.name = name;
@@ -25,6 +25,34 @@ public class DeathDto implements Serializable {
         this.certified = certified;
         this.hospitalName = hospitalName;
         this.mannerofdeath = mannerofdeath;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getCause() {
+        return cause;
+    }
+
+    public String getCertified() {
+        return certified;
+    }
+
+    public String getDateTime() {
+        return dateTime;
+    }
+
+    public String getHospitalName() {
+        return hospitalName;
+    }
+
+    public String getMannerofdeath() {
+        return mannerofdeath;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override

@@ -47,7 +47,7 @@
             <div class="row mb-3">
                 <label for="ageId" class="col-sm-2 col-form-label">Age at Death:</label>
                 <div class="col-sm-10">
-                    <input type="datetime-local" class="form-control" id="ageId" name="age" >
+                    <input type="number" class="form-control" id="ageId" name="age" >
                 </div>
             </div>
             <div class="row mb-3">

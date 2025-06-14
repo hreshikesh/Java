@@ -23,7 +23,9 @@ public class DeathServlet extends HttpServlet {
         String hospitalName = req.getParameter("hospitalName");
         String mannerofdeath = req.getParameter("mannerofdeath");
 
-        DeathDto deathDto = new DeathDto(name, cause, dateTime, age, certified, hospitalName, mannerofdeath);
+        int ageOfDeath=Integer.parseInt(age);
+
+        DeathDto deathDto = new DeathDto(name, cause, dateTime, ageOfDeath, certified, hospitalName, mannerofdeath);
         System.out.println("DeathDto: " + deathDto);
 
 
