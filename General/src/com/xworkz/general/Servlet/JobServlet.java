@@ -22,13 +22,16 @@ public class JobServlet extends HttpServlet {
         String expectedSalary= req.getParameter("expectedSalary");
         String experience= req.getParameter("experience");
 
+        int jobSalary=Integer.parseInt(expectedSalary);
+
+
 
         JobDTO jobDTO=new JobDTO();
         jobDTO.setName(name);
         jobDTO.setEmail(email);
         jobDTO.setEducation(education);
         jobDTO.setSkill(skill);
-        jobDTO.setExpectedSalary(expectedSalary);
+        jobDTO.setExpectedSalary(jobSalary);
         jobDTO.setExperience(experience);
         System.out.println("JobDTO: " + jobDTO);
 

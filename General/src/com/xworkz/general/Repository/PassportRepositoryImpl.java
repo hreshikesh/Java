@@ -5,6 +5,7 @@ import com.xworkz.general.Dto.PassPortDto;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class PassportRepositoryImpl implements PassportRepository {
 
@@ -18,6 +19,11 @@ public class PassportRepositoryImpl implements PassportRepository {
             String password="hrishi@sql";
             Connection connection= DriverManager.getConnection(url, user, password);
             System.out.println("Connection established successfully"+connection);
+
+            String sql = "INSERT INTO passport_table VALUES (0, '" + passPortDto.getApplicantName() + "', " + passPortDto.getAadar() + ", '" + passPortDto.getAddress() + "', '" + passPortDto.getPan() + "', '" + passPortDto.getCountry() + "', '" + passPortDto.getState() + "', '" + passPortDto.getCity() + "', " + passPortDto.getPincode() + ", '" + passPortDto.getPassportType() + "', '" + passPortDto.getPaymentRef() + "')";
+            Statement statement=connection.createStatement();
+            statement.executeUpdate(sql);
+
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
         }

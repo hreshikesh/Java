@@ -12,6 +12,7 @@ public class DrivingServiceImpl implements DrivingService {
         if (drivingDto != null) {
             System.out.println("DrivingDto is not null, proceeding to save");
             DrivingRepository drivingRepository = new DrivingRepositoryImpl();
+            drivingRepository.save(drivingDto);
             return "Success";
         }
         return "Failure";

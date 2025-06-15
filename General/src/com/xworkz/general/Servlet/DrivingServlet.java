@@ -21,8 +21,9 @@ public class DrivingServlet extends HttpServlet {
         String appliedDate = req.getParameter("appliedDate");
         String vehicleType = req.getParameter("vehicleType");
 
+        Long drivingMobile=Long.parseLong(mobile);
 
-        DrivingDto drivingDto = new DrivingDto(address, applicantName, appliedDate, mobile, vehicleType);
+        DrivingDto drivingDto = new DrivingDto(address, applicantName, appliedDate, drivingMobile, vehicleType);
         System.out.println("Received DrivingDto: " + drivingDto);
 
 

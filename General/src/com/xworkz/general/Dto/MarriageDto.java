@@ -29,6 +29,33 @@ public class MarriageDto implements Serializable {
         this.witness2 = witness2;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public String getBrideName() {
+        return brideName;
+    }
+
+    public String getGroomName() {
+        return groomName;
+    }
+
+    public String getMarriageDate() {
+        return marriageDate;
+    }
+
+    public String getReligion() {
+        return religion;
+    }
+
+    public String getWitness1() {
+        return witness1;
+    }
+
+    public String getWitness2() {
+        return witness2;
+    }
 
     @Override
     public String toString() {

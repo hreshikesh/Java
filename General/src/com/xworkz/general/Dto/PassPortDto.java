@@ -30,6 +30,46 @@ public class PassPortDto implements Serializable {
         this.paymentRef = paymentRef;
     }
 
+    public long getAadar() {
+        return aadar;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getApplicantName() {
+        return applicantName;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public String getPan() {
+        return pan;
+    }
+
+    public String getPassportType() {
+        return passportType;
+    }
+
+    public String getPaymentRef() {
+        return paymentRef;
+    }
+
+    public int getPincode() {
+        return pincode;
+    }
+
+    public String getState() {
+        return state;
+    }
+
     @Override
     public String toString() {
         return "PassPortDto{" +
