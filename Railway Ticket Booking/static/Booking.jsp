@@ -14,7 +14,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 
-<nav class="navbar navbar-expand-lg bg-primary">
+<nav class="navbar navbar-expand-lg bg-primary" style="opacity:0.8;">
     <div class="container-fluid">
         <a class="navbar-brand text-white fs-4 fw-bold" href="index.jsp">
             <i class="bi bi-train-freight-front text-white fs-4 me-2"></i>
@@ -39,7 +39,7 @@
     </div>
 </nav>
 <div class="container d-flex justify-content-center align-items-center " style="min-height: 80vh;">
-    <div class="bg-white p-5 shadow-lg p-3 m-5 bg-body-tertiary rounded " style="max-width=300px;width: 50%;">
+    <div class="bg-white p-5 shadow-lg p-3 m-5 bg-body-tertiary rounded " style="max-width=300px;width: 50%;" id="contentId">
         <h4 class="text-center">Ticket Booking</h4>
         <form action="booking" method="post">
             <div class="mb-3">
@@ -114,7 +114,7 @@
                 <label for="idnoId" class="form-label">Id no</label>
                 <input type="text" class="form-control" id="idnoId" name="idNo">
             </div>
-            <button type="submit" class="btn btn-primary w-100">Book Ticket</button>
+            <button type="submit" class="btn btn-primary w-100" style="opacity:0.8;">Book Ticket</button>
         </form>
     </div>
 </div>
