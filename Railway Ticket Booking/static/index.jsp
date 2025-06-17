@@ -27,7 +27,7 @@
 <div class="container d-flex justify-content-center align-items-center min-vh-100"  >
     <div class="bg-white p-5 rounded shadow text-center" >
         <p class="fs-3 fw-bold">Book Your Ticket</p>
-        <a href="Booking.jsp" class="btn btn-primary" style="opacity:0.8;">Click Here</a>
+        <a href="Booking.jsp" class="btn btn-primary" style="opacity:0.8;">Book Now!</a>
     </div>
 </div>
 
