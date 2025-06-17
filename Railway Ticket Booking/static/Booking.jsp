@@ -14,7 +14,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 
-<nav class="navbar navbar-expand-lg bg-primary" style="opacity:0.8;">
+<nav class="navbar navbar-expand-lg bg-primary">
     <div class="container-fluid">
         <a class="navbar-brand text-white fs-4 fw-bold" href="index.jsp">
             <i class="bi bi-train-freight-front text-white fs-4 me-2"></i>
@@ -25,10 +25,10 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="justify-content-end">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="index.jsp">Home</a>
                     </li>
@@ -36,10 +36,10 @@
                 </ul>
             </div>
         </div>
-    </div>
 </nav>
-<div class="container d-flex justify-content-center align-items-center " style="min-height: 80vh;">
-    <div class="bg-white p-5 shadow-lg p-3 m-5 bg-body-tertiary rounded " style="max-width=300px;width: 50%;" id="contentId">
+
+<div class="container d-flex justify-content-center align-items-center min-vh-80 ">
+    <div class="bg-white p-5 shadow-lg p-3 m-5 bg-body-tertiary rounded max-w=300 w-50">
         <h4 class="text-center">Ticket Booking</h4>
         <form action="booking" method="post">
             <div class="mb-3">
@@ -74,31 +74,33 @@
                 </select>
 
             </div>
-            <label class="form-label">Coach</label>
-            <div class="mb-3 d-flex justify-content-between">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="coach" id="generalId" value="general">
-                    <label class="form-check-label" for="generalId">
-                        General
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="coach" id="acId" value="ac">
-                    <label class="form-check-label" for="acid">
-                        AC
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="coach" id="nonacId" value="non-ac">
-                    <label class="form-check-label" for="nonacid">
-                        Non-AC
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="coach" id="sleeperId" value="sleeper">
-                    <label class="form-check-label" for="sleeperId">
-                        Sleeper
-                    </label>
+            <div class="mb-3">
+                <label class="form-label">Coach</label>
+                <div class="mb-3 d-flex  flex-wrap gap-5">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="coach" id="generalId" value="general">
+                        <label class="form-check-label" for="generalId">
+                            General
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="coach" id="acId" value="ac">
+                        <label class="form-check-label" for="acid">
+                            AC
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="coach" id="nonacId" value="non-ac">
+                        <label class="form-check-label" for="nonacid">
+                            Non-AC
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="coach" id="sleeperId" value="sleeper">
+                        <label class="form-check-label" for="sleeperId">
+                            Sleeper
+                        </label>
+                    </div>
                 </div>
             </div>
             <div class="mb-3">
