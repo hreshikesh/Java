@@ -42,7 +42,7 @@ public class BookingServlet extends HttpServlet {
         bookingDto.setIdNo(idNo);
 
         System.out.println("Booking Details:");
-        System.out.println("Name: " + bookingDto.getName()+" Age"+bookingDto.getAge()+" Source"+bookingDto.getSource()+" Destination"+bookingDto.getDestination()+" Date"+bookingDto.getDate()+" No of Passenger"+bookingDto.getNoOfPassenger()+" Coach"+bookingDto.getCoach()+" IdProof"+bookingDto.getIdProof()+" IdNo"+bookingDto.getIdNo());
+        System.out.println("Name " + bookingDto.getName()+" Age "+bookingDto.getAge()+" Source "+bookingDto.getSource()+" Destination "+bookingDto.getDestination()+" Date "+bookingDto.getDate()+" No of Passenger "+bookingDto.getNoOfPassenger()+" Coach "+bookingDto.getCoach()+" IdProof "+bookingDto.getIdProof()+" IdNo "+bookingDto.getIdNo());
 
         BookingSevice bookingSevice=new BookingServiceImpl();
 
