@@ -4,6 +4,7 @@ import com.xworkz.ticket.dto.BookingDto;
 import com.xworkz.ticket.service.BookingServiceImpl;
 import com.xworkz.ticket.service.BookingSevice;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -46,7 +47,21 @@ public class BookingServlet extends HttpServlet {
 
         BookingSevice bookingSevice=new BookingServiceImpl();
 
-         bookingSevice.validateAndSave(bookingDto);
+        String result=bookingSevice.validateAndSave(bookingDto);
+
+
+
+        if(!result.equals("Data Saved")){
+            req.setAttribute("dto",bookingDto);
+            req.setAttribute("result", result);
+        }
+
+
+        RequestDispatcher requestDispatcher=req.getRequestDispatcher("Booking.jsp");
+        requestDispatcher.forward(req,resp);
+
+
+
 
 
 
