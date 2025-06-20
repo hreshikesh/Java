@@ -25,4 +25,17 @@ public class BookingServiceImpl implements BookingSevice {
         return "data saved";
 
     }
+
+
+    @Override
+    public BookingDto findById(int id) {
+        System.out.println("Running Service for finding data by id");
+        if(id<=0){
+            System.out.println("id less than 0  or equals to 0");
+        }
+        return null;
+    }
+
+
+
 }

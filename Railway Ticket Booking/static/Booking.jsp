@@ -45,13 +45,13 @@
     <div class="bg-white p-5 shadow-lg p-3 m-5 bg-body-tertiary rounded max-w=300 w-50">
         <h4 class="text-center">Ticket Booking</h4>
         <form action="booking" method="post">
-            <c:if test="${result == 'data saved'}">
-                <p class="text-success">${resultSuccess}</p>
-            </c:if>
+<!--            <c:if test="${result == 'data saved'}">-->
+<!--                <p class="text-success">${resultSuccess}</p>-->
+<!--            </c:if>-->
 
-            <c:if test="${result == 'Name is invalid'}">
-                <p class="text-danger">${resultFail}</p>
-            </c:if>
+<!--            <c:if test="${result == 'Name is invalid'}">-->
+<!--                <p class="text-danger">${resultFail}</p>-->
+<!--            </c:if>-->
 
             <div class="mb-3">
                 <label for="nameId" class="form-label">Name</label>

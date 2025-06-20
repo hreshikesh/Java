@@ -66,4 +66,24 @@ public class BookingServlet extends HttpServlet {
 
 
     }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String id=req.getParameter("id");
+        int convertedId=Integer.parseInt(id);
+
+
+        System.out.println("Converted "+convertedId);
+
+
+        BookingSevice bookingService=new BookingServiceImpl();
+        BookingDto bookingDto=bookingService.findById(convertedId);
+        System.out.println(bookingDto);
+        if(bookingDto==null){
+            System.out.println("Data not Found");
+        }else System.out.println("Data Found");
+
+
+
+    }
 }

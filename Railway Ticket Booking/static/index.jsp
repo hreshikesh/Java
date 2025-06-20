@@ -28,6 +28,8 @@
     <div class="bg-white p-5 rounded shadow text-center" >
         <p class="fs-3 fw-bold">Book Your Ticket</p>
         <a href="Booking.jsp" class="btn btn-primary" style="opacity:0.8;">Book Now!</a>
+
+        <a href="search.jsp" class="btn btn-primary" style="opacity:0.8;">Search Job!</a>
     </div>
 </div>
 
