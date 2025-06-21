@@ -62,5 +62,18 @@
         </form>
     </div>
 </div>
+
+
+<div class="container  justify-content-center align-items-center">
+    <h1>${result}</h1>
+    <span class="text-warning">${failMessage}</span>
+    <span class="text-success">${message}</span>
+    <p>${name}:${dto.name}</p>
+    <p>${age}:${dto.age}</p>
+    <p>${source}:${dto.source}</p>
+    <p>${destination}:${dto.destination}</p>
+    <p>${passenger}:${dto.noOfPassenger}</p>
+    <p>${coach}:${dto.coach}</p>
+</div>
 </body>
 </html>

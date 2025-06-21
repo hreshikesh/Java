@@ -17,6 +17,17 @@ public class BookingDto implements Serializable {
 
     }
 
+    public BookingDto(String name,int age, String source, String destination, String noOfPassenger, String coach,String idProof, String idNo  ) {
+        this.age = age;
+        this.coach = coach;
+        this.destination = destination;
+        this.idNo = idNo;
+        this.idProof = idProof;
+        this.name = name;
+        this.noOfPassenger = noOfPassenger;
+        this.source = source;
+    }
+
     public String getName() {
         return name;
     }
