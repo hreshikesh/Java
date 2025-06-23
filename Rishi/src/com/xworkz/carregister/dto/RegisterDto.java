@@ -41,7 +41,7 @@ public class RegisterDto implements Serializable {
     }
 
     public String getCarName() {
-        return carName;
+        return this.carName;
     }
 
     public void setCarName(String carName) {
@@ -49,7 +49,7 @@ public class RegisterDto implements Serializable {
     }
 
     public String getCarType() {
-        return carType;
+        return this.carType;
     }
 
     public void setCarType(String carType) {
@@ -57,7 +57,7 @@ public class RegisterDto implements Serializable {
     }
 
     public String getCompany() {
-        return company;
+        return this.company;
     }
 
     public void setCompany(String company) {

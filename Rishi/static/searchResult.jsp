@@ -26,8 +26,8 @@
         </div>
         <div class="d-flex justify-content-end  align-items-center w-100">
             <form class="d-flex " role="search" action="search">
-                <input class="form-control me-2 w-75  " type="search" placeholder="Search"  name="carName" aria-label="Search" >
-                <button class="btn btn-warning me-2" type="Search" >Search</button>
+                <input class="form-control me-2 w-75  " type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-warning me-2" type="car name" name="carName">Search</button>
             </form>
             <a class="icon-link fs-5 fw-bold bg-warning-subtle text-warning-emphasis" href="login">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -51,9 +51,12 @@
 <div class="container-fluid d-flex justify-content-center  align-items-center min-vh-100 ">
     <div class="border border-black border-3 rounded-3 p-4 text-center shadow-lg p-3 mb-5 bg-body-tertiary rounded  bg-warning-subtle text-warning-emphasis"
          data-bs-theme="dark">
-        <p class="fs-4 fw-bold ">Register Your Car</p>
-        <a class="btn btn-outline-warning" role="button" aria-disabled="true" href="register">Register Here</a>
-
+        <p>${result}</p>
+        <p>${resultSuccess}</p>
+        <span>${dto.carName}</span>
+        <span>${dto.userName}</span>
+        <span>${dto.company}</span>
+        <span>${dto.carType}</span>
     </div>
 </div>
 
