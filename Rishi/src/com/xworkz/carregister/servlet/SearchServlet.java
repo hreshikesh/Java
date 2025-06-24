@@ -21,20 +21,21 @@ public class SearchServlet extends HttpServlet {
 
         SearchService searchService=new SearchServiceImpl();
         RegisterDto registerDto=searchService.validate(carName);
+        for(int i=0;i<100;i++) {
+            if (registerDto != null) {
+                System.out.println("yes");
+                RequestDispatcher requestDispatcher = req.getRequestDispatcher("searchResult.jsp");
+                req.setAttribute("resultSuccess", "Results:");
+                req.setAttribute("dto", registerDto);
+                requestDispatcher.forward(req, resp);
 
-        if(registerDto != null){
-            System.out.println("yes");
-            RequestDispatcher requestDispatcher=req.getRequestDispatcher("searchResult.jsp");
-            req.setAttribute("resultSuccess","Results:");
-            req.setAttribute("dto",registerDto);
-            requestDispatcher.forward(req,resp);
+            } else {
+                System.out.println("no");
+                RequestDispatcher requestDispatcher = req.getRequestDispatcher("searchResult.jsp");
+                req.setAttribute("result", "Data not Found");
+                requestDispatcher.forward(req, resp);
 
-        }else{
-            System.out.println("no");
-            RequestDispatcher requestDispatcher=req.getRequestDispatcher("searchResult.jsp");
-            req.setAttribute("result","Data not Found");
-            requestDispatcher.forward(req,resp);
-
+            }
         }
 
 
