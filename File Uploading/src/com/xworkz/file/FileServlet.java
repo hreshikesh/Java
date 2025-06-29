@@ -24,6 +24,11 @@ public class FileServlet extends HttpServlet {
         String uploadPath="C:\\Users\\ailhr\\Downloads";
         File file=new File(uploadPath);
         System.out.println(file);
+        //saved to directory
+        part.write(file+File.separator+fileName);
+        System.out.println("Sucessfully Saved");
+        
+
 
 
 
