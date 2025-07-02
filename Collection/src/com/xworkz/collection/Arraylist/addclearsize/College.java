@@ -1,4 +1,4 @@
-package com.xworkz.collection.Arraylist;
+package com.xworkz.collection.Arraylist.addclearsize;
 
 import java.util.Collection;
 import java.util.ArrayList;
