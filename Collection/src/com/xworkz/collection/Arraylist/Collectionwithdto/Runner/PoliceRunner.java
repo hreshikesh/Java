@@ -18,6 +18,11 @@ public class PoliceRunner {
         policeCollection.add(new PoliceDto("Prakash", "BTM Layout Police Station", "Bangalore", "Sub Inspector", 33, "Cyber Crime", 47000));
         policeCollection.add(new PoliceDto("Manoj", "JP Nagar Police Station", "Bangalore", "Constable", 29, "Local", 31000));
         policeCollection.add(new PoliceDto("Ajay", "KSR Police Station", "Bangalore", "Inspector", 36, "Railway", 55000));
+//        PoliceDto policeDt=new PoliceDto();
+//        policeDt.setAge(10);
+//        policeCollection.add(policeDt);
+
+
 
         for(PoliceDto policeDto:policeCollection){
             System.out.println("Police Name: " + policeDto.getPoliceName() + ", Police Station: " + policeDto.getPoliceStation() + ", Place: " + policeDto.getPlace() + ", Position: " + policeDto.getPosition() + ", Age: " + policeDto.getAge() + ", Branch: " + policeDto.getBranch() + ", Salary: " + policeDto.getSalary());
