@@ -1,6 +1,6 @@
 package com.xworkz.collection.Arraylist.CollectionIterator.dto;
 
-import java.awt.*;
+
 import java.io.Serializable;
 
 public class BookDto implements Serializable {
