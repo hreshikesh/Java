@@ -33,7 +33,7 @@ public class CountryRepositoryImpl implements CountryRepository<String> {
                 "North Macedonia", "Guinea", "Guyana", "Yemen", "Jordan", "Laos", "Honduras", "Burkina Faso",
                 "Bangladesh", "Liechtenstein", "Cape Verde", "Côte d’Ivoire", "Suriname", "Comoros",
                 "Sao Tome and Principe", "Republic of the Congo", "Afghanistan", "Mauritius", "Netherlands",
-                "Trinidad and Tobago", "Zimbabwe", "Liberia", "Sweden", "Austria", "Spain", "Greece"
+                "Trinidad and Tobago", "Zimbabwe", "Liberia", "Sweden", "Austria", "Spain", "Greece","malayalam"
         ));
 
 
