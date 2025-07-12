@@ -63,7 +63,7 @@
     </div>
 
 </form>
-<form action="fetch" method="get">
+<form action="login" method="get">
 
     <div class="row text-center m-5">
         <div class="col-12">

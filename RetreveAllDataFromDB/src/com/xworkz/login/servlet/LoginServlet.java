@@ -13,17 +13,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 
-@WebServlet(urlPatterns = {"/login","/fetch"}, loadOnStartup = 1)
+@WebServlet(urlPatterns = {"/login"}, loadOnStartup = 1)
 
 public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String uri=req.getRequestURI();
-        if(uri.endsWith("/login"))
 
-        {
             String name = req.getParameter("name");
             String email = req.getParameter("email");
             String mobile = req.getParameter("mobile");
@@ -58,13 +55,12 @@ public class LoginServlet extends HttpServlet {
                     RequestDispatcher requestDispatcher1 = req.getRequestDispatcher("index.jsp");
                     requestDispatcher1.forward(req, resp);
             }
-        }
+
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String uri=req.getRequestURI();
-        if(uri.endsWith("/fetch")) {
+
             LoginService retreiveService = new LoginServiceImpl();
             ArrayList<LoginDto> loginDtoArrayList = retreiveService.findAll();
 
@@ -76,7 +72,7 @@ public class LoginServlet extends HttpServlet {
         }
 
 
-    }
+
 
 
 
