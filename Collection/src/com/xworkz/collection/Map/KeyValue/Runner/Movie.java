@@ -8,10 +8,9 @@ public class Movie {
 
     public static void main(String[] args) {
         Map<String ,Float> movieMap=new HashMap<>();
-        movieMap.put("Bahibali",200.00f );
+        movieMap.put("Bahubali",200.00f );
         movieMap.put("Dabang",199.99f);
         movieMap.put("Puspha",499.00f);
-
-        movieMap.forEach((s,f)-> System.out.println("Movie name:"+s+" price:"+f));
+        movieMap.forEach((S,F)-> System.out.println("Movie name:"+S+" price:"+F));
     }
 }
