@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class CountryRunner {
     public static void main(String[] args) {
@@ -746,7 +747,7 @@ public class CountryRunner {
         HeadOfDepartment hodParis3 = new HeadOfDepartment("Dr. Thomas Barre", 58, staffParis3);
 
         Department deptParis1 = new Department("Urban Development", 4, hodParis1);
-        Department deptParis2 = new Department("Finance Management", 3, hodParis2);
+        Department deptParis2 = new Department("Urban Development", 3, hodParis2);
         Department deptParis3 = new Department("Digital Services", 4, hodParis3);
 
         List<Portfolio> parisPortfolios1 = new ArrayList<>();
@@ -785,5 +786,36 @@ public class CountryRunner {
 
         Collection<Country> countries=new ArrayList<>(Arrays.asList(country,country1,country2,country3,country4,country5,country6,country7,country8,country9,country10));
 
+
+        System.out.println("1......get all chncellor ");
+
+
+       countries.stream().map(count->count.getStates()).
+               forEach(s->s.stream().
+                       map(min->min.getMinisters()).
+                       forEach(m->m.stream().
+                               map(port->port.getPortfolios()).
+                               forEach(p->p.stream().
+                                       map(dep->dep.getDepartment().getHeadOfDepartment().getStaff()).forEach(st->st.stream().
+                                               map(sta->sta.getDetails().getEducation().getUniversity().getChancellor()).forEach(cn-> System.out.println("chancelor "+cn))))));
+
+
+        System.out.println("2...Get PortFoilio as single list");
+
+        countries.stream().map(c->c.getStates()).forEach(st->st.stream().map(min->min.getMinisters()).forEach(m->m.stream().map(port->port.getPortfolios()).forEach(p-> System.out.println("portfolio "+p))));
+
+
+        System.out.println("Get all university names");
+
+       countries.stream().map(c->c.getStates()).forEach(st->st.stream().map(min->min.getMinisters()).forEach(m->m.stream().map(port->port.getPortfolios()).forEach(p->p.stream().map(d->d.getDepartment().getHeadOfDepartment().getStaff()).forEach(sta->sta.stream().map(det->det.getDetails().getEducation().getUniversity().getUniversityName()).collect(Collectors.toList()).forEach(un-> System.out.println("university Name "+un))))));
+
+        System.out.println("Get all Ministers");
+        countries.stream().map(c->c.getStates()).forEach(st->st.stream().map(min->min.getMinisters()).forEach(prnt-> System.out.println("Minister List "+prnt)));
+
+        System.out.println("Get Unioque Department");
+      countries.stream().map(c->c.getStates()).forEach(st->st.stream().map(min->min.getMinisters()).forEach(m->m.stream().map(port->port.getPortfolios()).forEach(p->p.stream().map(dep->dep.getDepartment().getDepartmentName()).collect(Collectors.toSet()).forEach(out-> System.out.println("Name of dept "+out)))));
+
     }
+
+
 }
