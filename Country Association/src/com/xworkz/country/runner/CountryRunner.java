@@ -3,10 +3,7 @@ package com.xworkz.country.runner;
 import com.xworkz.country.dto.*;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class CountryRunner {
@@ -807,13 +804,59 @@ public class CountryRunner {
 
         System.out.println("Get all university names");
 
-       countries.stream().map(c->c.getStates()).forEach(st->st.stream().map(min->min.getMinisters()).forEach(m->m.stream().map(port->port.getPortfolios()).forEach(p->p.stream().map(d->d.getDepartment().getHeadOfDepartment().getStaff()).forEach(sta->sta.stream().map(det->det.getDetails().getEducation().getUniversity().getUniversityName()).collect(Collectors.toList()).forEach(un-> System.out.println("university Name "+un))))));
+       countries.stream().map(c->c.getStates()).
+               forEach(st->st.stream().
+                       map(min->min.getMinisters()).
+                       forEach(m->m.stream().map(port->port.getPortfolios()).
+                               forEach(p->p.stream().map(d->d.getDepartment().
+                                       getHeadOfDepartment().getStaff()).
+                                       forEach(sta->sta.stream().map(det->det.getDetails().
+                                               getEducation().getUniversity().getUniversityName()).
+                                               collect(Collectors.toList()).
+                                               forEach(un-> System.out.println("university Name "+un))))));
 
         System.out.println("Get all Ministers");
         countries.stream().map(c->c.getStates()).forEach(st->st.stream().map(min->min.getMinisters()).forEach(prnt-> System.out.println("Minister List "+prnt)));
 
-        System.out.println("Get Unioque Department");
-      countries.stream().map(c->c.getStates()).forEach(st->st.stream().map(min->min.getMinisters()).forEach(m->m.stream().map(port->port.getPortfolios()).forEach(p->p.stream().map(dep->dep.getDepartment().getDepartmentName()).collect(Collectors.toSet()).forEach(out-> System.out.println("Name of dept "+out)))));
+        System.out.println("Get Unioque Department //error");
+      countries.stream().map(c->c.getStates()).
+              forEach(st->st.stream().
+                      map(min->min.getMinisters()).
+                      forEach(m->m.stream().
+                              map(port->port.getPortfolios()).
+                              forEach(p-> p.stream().
+                                      map(dep->dep.getDepartment()).distinct().forEach(out-> System.out.println(out)))));
+
+      System.out.println("======================");
+
+      Set<String> ref1=countries.stream().flatMap(c->c.getStates().stream()).flatMap(s->s.getMinisters().stream()).
+      flatMap(m->m.getPortfolios().stream()).map(p->p.getDepartment().getDepartmentName()).collect(Collectors.toSet());
+
+      ref1.forEach(out->System.out.println(out));
+
+
+      System.out.println("=============");
+
+
+
+
+
+
+
+        System.out.println("get Staff and Education");
+//       Iterator<String> ref=countries.stream().map(c->c.getStates()).forEach(st->st.stream().map(min->min.getMinisters()).forEach(m->m.stream().map(port->port.getPortfolios()).forEach(p->p.stream().map(d->d.getDepartment().getHeadOfDepartment().getStaff().stream().map(de->de.getStaffName()).collect(Collectors.toList())).forEach(sta->sta.stream().collect(Collectors.toList()).stream().iterator()))));
+////        stream().map(det->det.getDetails().getEducation()).collect(Collectors.toList()).forEach((s)-> System.out.println(s))))));
+
+
+        countries.stream().map(sta->sta.getStates()).forEach(s->s.stream().map(min->min.getMinisters()).forEach(m->m.stream().map(port->port.getPortfolios()).forEach(p->p.stream().map(po->po.getDepartment().getHeadOfDepartment().getStaff()).
+                forEach(st->{
+                   List<Education> ref=st.stream().map(S->S.getDetails().getEducation()).collect(Collectors.toList());
+                    System.out.println("Staff "+st+" Education "+ref);
+
+                }))));
+
+
+
 
     }
 
