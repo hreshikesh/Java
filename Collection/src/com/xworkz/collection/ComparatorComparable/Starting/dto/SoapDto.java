@@ -1,4 +1,4 @@
-package com.xworkz.collection.ComparatorComparable.dto;
+package com.xworkz.collection.ComparatorComparable.Starting.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

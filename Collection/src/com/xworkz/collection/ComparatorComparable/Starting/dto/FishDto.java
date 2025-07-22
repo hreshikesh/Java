@@ -1,11 +1,9 @@
-package com.xworkz.collection.ComparatorComparable.dto;
+package com.xworkz.collection.ComparatorComparable.Starting.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
-import java.util.Comparator;
 
 @Getter
 @Setter

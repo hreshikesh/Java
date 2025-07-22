@@ -1,6 +1,6 @@
-package com.xworkz.collection.ComparatorComparable.Runner;
+package com.xworkz.collection.ComparatorComparable.Starting.dto.Runner;
 
-import com.xworkz.collection.ComparatorComparable.dto.SoapDto;
+import com.xworkz.collection.ComparatorComparable.Starting.dto.SoapDto;
 
 import java.util.ArrayList;
 import java.util.Collections;

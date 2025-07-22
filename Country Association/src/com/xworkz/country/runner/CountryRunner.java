@@ -806,8 +806,8 @@ public class CountryRunner {
 
        countries.stream().map(c->c.getStates()).
                forEach(st->st.stream().
-                       map(min->min.getMinisters()).
-                       forEach(m->m.stream().map(port->port.getPortfolios()).
+                       map(State::getMinisters).
+                       forEach(m->m.stream().map(Minister::getPortfolios).
                                forEach(p->p.stream().map(d->d.getDepartment().
                                        getHeadOfDepartment().getStaff()).
                                        forEach(sta->sta.stream().map(det->det.getDetails().
@@ -832,7 +832,7 @@ public class CountryRunner {
       Set<String> ref1=countries.stream().flatMap(c->c.getStates().stream()).flatMap(s->s.getMinisters().stream()).
       flatMap(m->m.getPortfolios().stream()).map(p->p.getDepartment().getDepartmentName()).collect(Collectors.toSet());
 
-      ref1.forEach(out->System.out.println(out));
+      ref1.forEach(System.out::println);
 
 
       System.out.println("=============");
@@ -841,11 +841,22 @@ public class CountryRunner {
 
 
 
+/*
 
 
         System.out.println("get Staff and Education");
-//       Iterator<String> ref=countries.stream().map(c->c.getStates()).forEach(st->st.stream().map(min->min.getMinisters()).forEach(m->m.stream().map(port->port.getPortfolios()).forEach(p->p.stream().map(d->d.getDepartment().getHeadOfDepartment().getStaff().stream().map(de->de.getStaffName()).collect(Collectors.toList())).forEach(sta->sta.stream().collect(Collectors.toList()).stream().iterator()))));
-////        stream().map(det->det.getDetails().getEducation()).collect(Collectors.toList()).forEach((s)-> System.out.println(s))))));
+       List<String> stringList=countries
+               .stream()
+               .map(c->c.getStates())
+               .forEach(st->st.stream().map(min->min.getMinisters())
+                       .forEach(m->m.stream().map(port->port.getPortfolios())
+                               .forEach(p->p.stream().map(d->d.getDepartment().getHeadOfDepartment().getStaff()
+                                       .stream().map(de->de.getStaffName()).collect(Collectors.toList())))));
+
+*/
+       countries
+               .stream()
+                       .map(country100->country100.getStates().stream().map(stateTemp->stateTemp.getMinisters()));
 
 
         countries.stream().map(sta->sta.getStates()).forEach(s->s.stream().map(min->min.getMinisters()).forEach(m->m.stream().map(port->port.getPortfolios()).forEach(p->p.stream().map(po->po.getDepartment().getHeadOfDepartment().getStaff()).
