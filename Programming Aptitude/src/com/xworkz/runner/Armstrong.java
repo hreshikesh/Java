@@ -1,4 +1,4 @@
-package com.xworkz.code.Armstrong;
+package com.xworkz.runner;
 
 
 import java.util.Scanner;
