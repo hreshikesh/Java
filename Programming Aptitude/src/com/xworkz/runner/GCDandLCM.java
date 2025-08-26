@@ -10,16 +10,14 @@ public class GCDandLCM {
                 gcd=i;
             }
         }
-
         return gcd;
     }
-
 
     public static void main(String[] args) {
         int a=10;
         int b=20;
         int gcdValue=gcd(a,b);
         System.out.println("GCD"+gcdValue);
-        System.out.println("LCM"+(a*10)/gcdValue);
+        System.out.println("LCM"+(a*b)/gcdValue);
     }
 }

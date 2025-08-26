@@ -1,5 +1,5 @@
 package com.xworkz.runner;
-//sum of factoril should be same as the number
+//sum of factorial should be same as the number
 public class StrongNumber {
     public static int factorial(int num){
         int n;
