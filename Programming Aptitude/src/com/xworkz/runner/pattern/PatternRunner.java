@@ -1,5 +1,7 @@
 package com.xworkz.runner.pattern;
 
+import java.util.Arrays;
+
 public class PatternRunner {
     public static void main(String[] args) {
         System.out.println("1.");
@@ -71,19 +73,39 @@ public class PatternRunner {
         }
 
         System.out.println("7.");
-        for (int i = 5; i >=1 ; i--) {
-            for (int j = 5; j>i ; j--) {
+        for (int i = 1; i <=5 ; i++) {
+            for (int j = 1; j <i ; j++) {
                 System.out.print(" ");
             }
             for (int j = i; j <=5 ; j++) {
-                System.out.print("*");
+                System.out.print("* ");
 
             }
             System.out.println();
-
-
         }
 
+        System.out.println("8.");
+//        uppertrainglr
+
+        for (int i = 1; i <=4 ; i++) {
+            for (int j = i; j <5 ; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <=i ; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        //lowertraingl
+        for (int i = 1; i <=5 ; i++) {
+            for (int j = 1; j <i ; j++) {
+                System.out.print(" ");
+            }
+            for (int j = i; j <=5 ; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
 
     }
 }
