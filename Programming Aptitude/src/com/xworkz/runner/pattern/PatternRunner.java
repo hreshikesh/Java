@@ -132,6 +132,29 @@ public class PatternRunner {
             System.out.println();
         }
 
+
+        System.out.println("11.");
+        int num=5;
+        for (int i = 1; i <=num ; i++) {
+            for (int j = i; j <=num-1 ; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <=2*i-1 ; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = 1; i <=num ; i++) {
+            for (int j = 1; j<i ; j++){
+                System.out.print(" ");
+            }
+            for (int j = (2*i)-1; j <=(num*2)-1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
     }
 
 
