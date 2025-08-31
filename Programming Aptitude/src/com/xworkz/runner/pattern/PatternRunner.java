@@ -229,5 +229,34 @@ public class PatternRunner {
             System.out.println();
 
         }
+
+
+        System.out.println("16.Hollow square");
+        for (int i = 1; i <=num ; i++) {
+            for (int j = 1; j <=num ; j++) {
+                if (j==1||i==1||j==num||i==num) System.out.print("*");
+                else System.out.print(" ");
+
+            }
+            System.out.println();
+
+        }
+
+        System.out.println("117.");
+        for (int i = 1; i <=num ; i++) {
+            for (int j = 1; j <=num-i ; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <=i ; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        for (int i = num; i >=0 ; i++) {
+
+        }
+
+
     }
 }
