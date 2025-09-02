@@ -16,13 +16,8 @@ public class PermutationOfString {
         }
 
     }
-
-
-
-
     public static void main(String[] args) {
         String value="hello";
         permuteString(value,"");
-
     }
 }
