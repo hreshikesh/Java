@@ -11,6 +11,5 @@ public class NoOfWordsInString {
             count++;
         }
         System.out.println(count);
-
     }
 }
