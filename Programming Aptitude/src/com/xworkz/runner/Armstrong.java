@@ -1,6 +1,4 @@
 package com.xworkz.runner;
-
-
 import java.util.Scanner;
 
 public class Armstrong {
@@ -9,7 +7,6 @@ public class Armstrong {
         System.out.println("Enter a number");
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-
         ArmstrongCompute armstrong=new ArmstrongCompute();
         boolean isArmstrong=armstrong.amstrongCompute(number);
 
